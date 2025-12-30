@@ -58,8 +58,8 @@ The Accelerator is integrated into the Zynq UltraScale+ MPSoC subsystem using th
 * **Clock Domain:** The entire accelerator subsystem runs on a 100MHz PL clock derived from the Zynq PS.
 * **Reset Logic:** A unified Processor System Reset block synchronizes the reset signals across the DMA, Interconnect, and Accelerator IP to ensure clean startup sequences.
 
-![System Block Design](Screenshot%202025-12-30%20202318.png)
-*Figure 1: The Vivado Block Design connecting the Zynq MPSoC, AXI Interconnects, and the VGG Accelerator IP.*
+<img width="100%" alt="System Block Design" src="https://github.com/user-attachments/assets/e67d37af-9d36-4acb-bd67-eb38dd986b3a" />
+
 
 ### 3. Software Stack (Brief)
 The Processing System (PS) runs a lightweight Python application on PYNQ Linux.
@@ -77,8 +77,8 @@ The design was synthesized and implemented on the PYNQ-ZU board, meeting all tim
 * **Inference Latency:** **3.29 ms** (329,008 cycles)
 * **Slack:** Positive (Estimated 8.115 ns vs Target 10.00 ns)
 
-![Timing Report](image_de4ead.png)
-*Figure 2: HLS Synthesis Report showing 3.29ms latency.*
+<img width="100%" alt="Latency & Timing" src="https://github.com/user-attachments/assets/258ef385-200e-4982-b6ec-9ad5fd7abd97" />
+
 
 ### Resource Efficiency (Zero DSP)
 By forcing logic-only arithmetic via quantization, the design achieves extreme efficiency:
@@ -90,8 +90,8 @@ By forcing logic-only arithmetic via quantization, the design achieves extreme e
 | **LUT** | 40,994 | 117,120 | 35% |
 | **FF** | 15,135 | 234,240 | 6% |
 
-![Utilization Report](image_de4eeb.png)
-*Figure 3: Resource Utilization showing 0 DSP usage.*
+<img  width="100%" alt="Resource Utilization" src="https://github.com/user-attachments/assets/20cf2911-f800-4ad1-b853-3121ee9b730f" />
+
 
 ---
 

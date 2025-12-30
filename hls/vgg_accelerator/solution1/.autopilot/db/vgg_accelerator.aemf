@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1765454880440">
+  <ports id="1" name="INPUT_STREAM_V_data_V" type="PortType" originalName="INPUT_STREAM" coreId="1701734249" bitwidth="32">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="INPUT_STREAM_V_keep_V" type="PortType" originalName="INPUT_STREAM" coreId="1701734249" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="INPUT_STREAM_V_strb_V" type="PortType" originalName="INPUT_STREAM" coreId="2978966704" bitwidth="4">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="INPUT_STREAM_V_last_V" type="PortType" originalName="INPUT_STREAM" coreId="1701734249" bitwidth="1">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="OUTPUT_STREAM_V_data_V" type="PortType" originalName="OUTPUT_STREAM" coreId="1701734249" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="OUTPUT_STREAM_V_keep_V" type="PortType" originalName="OUTPUT_STREAM" coreId="1701734249" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="7" name="OUTPUT_STREAM_V_strb_V" type="PortType" originalName="OUTPUT_STREAM" coreId="1701734249" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="8" name="OUTPUT_STREAM_V_last_V" type="PortType" originalName="OUTPUT_STREAM" coreId="842230048" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="181" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="182" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="183" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="184" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="199" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.4"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.5"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.6"/>
+  <edges id="202" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@ports.7"/>
+  <edges id="203" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="204" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="205" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="206" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="207" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="208" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="209" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="210" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="211" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="212" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="213" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="214" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="215" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="216" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="217" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="218" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="219" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="220" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="221" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="222" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="223" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="224" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="225" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="226" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="227" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="228" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="229" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="230" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="231" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="232" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="233" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="234" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="235" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="236" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="237" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="238" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="239" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="240" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="241" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="242" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="243" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="244" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="245" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="246" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="247" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="248" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="249" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="250" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="251" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="252" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="253" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="254" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="255" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="256" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="257" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="258" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="259" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="260" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="261" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="262" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="263" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="264" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="265" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="266" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="267" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="268" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="269" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="270" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="271" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="272" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="273" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="274" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="275" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="276" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="277" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="278" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="279" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="280" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="281" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="282" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="283" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="284" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="285" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="286" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="287" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="288" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="289" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="290" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="291" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="292" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="293" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="294" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="295" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="296" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="297" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="298" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="299" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="300" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="301" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="302" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="303" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="304" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="305" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="306" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="307" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="308" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="309" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="310" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="311" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="312" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="313" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="314" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="315" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="316" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="317" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="318" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="319" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="320" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="321" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="322" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="323" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="324" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="325" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="326" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="327" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="328" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="329" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="330" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="331" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="332" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="333" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="334" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="335" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="336" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="337" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="338" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="339" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="340" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="669" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="670" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="671" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="672" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="673" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="674" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="675" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="676" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="677" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="678" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="679" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="680" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="681" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="682" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="683" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="684" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="685" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="686" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="687" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="688" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="361" RegionName="vgg_accelerator">
+    <basic_blocks id="178" name="vgg_accelerator" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="169" name="_ln203" lineNumber="203" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="input_adapter_U0" coreId="741487420" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="203" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <dataInputObjs>INPUT_STREAM_V_data_V</dataInputObjs>
+        <dataInputObjs>INPUT_STREAM_V_keep_V</dataInputObjs>
+        <dataInputObjs>INPUT_STREAM_V_strb_V</dataInputObjs>
+        <dataInputObjs>INPUT_STREAM_V_last_V</dataInputObjs>
+        <constName>input_adapter</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="170" name="_ln205" lineNumber="205" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="layer_block_1_16_32_U0" coreId="741487420" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="205" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <constName>layer_block_1_16_32_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="171" name="_ln206" lineNumber="206" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="max_pool_16_32_U0" coreId="943481957" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="206" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <constName>max_pool_16_32_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="172" name="_ln208" lineNumber="208" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="layer_block_16_32_16_U0" coreId="1013212536" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="208" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <constName>layer_block_16_32_16_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="173" name="_ln209" lineNumber="209" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="max_pool_32_16_U0" coreId="943481957" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="9.0" nodeLatency="1" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="209" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <constName>max_pool_32_16_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="174" name="_ln211" lineNumber="211" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="layer_block_32_64_8_U0" coreId="741487420" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="11.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="211" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <constName>layer_block_32_64_8_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="175" name="_ln212" lineNumber="212" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="max_pool_64_8_U0" coreId="943481957" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="13.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="212" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <constName>max_pool_64_8_s</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="176" name="_ln214" lineNumber="214" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="dense_layer_U0" coreId="741487420" contextFuncName="vgg_accelerator" opcode="call" nodeLabel="15.0" nodeLatency="1" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="214" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+        <dataOutputObjs>OUTPUT_STREAM_V_data_V</dataOutputObjs>
+        <dataOutputObjs>OUTPUT_STREAM_V_keep_V</dataOutputObjs>
+        <dataOutputObjs>OUTPUT_STREAM_V_strb_V</dataOutputObjs>
+        <dataOutputObjs>OUTPUT_STREAM_V_last_V</dataOutputObjs>
+        <constName>dense_layer</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="177" name="_ln215" lineNumber="215" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="943481957" contextFuncName="vgg_accelerator" opcode="ret" nodeLabel="17.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="215" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="vgg_accelerator"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="vgg_accelerator.cpp">
+        <validLinenumbers>203</validLinenumbers>
+        <validLinenumbers>205</validLinenumbers>
+        <validLinenumbers>206</validLinenumbers>
+        <validLinenumbers>208</validLinenumbers>
+        <validLinenumbers>209</validLinenumbers>
+        <validLinenumbers>211</validLinenumbers>
+        <validLinenumbers>212</validLinenumbers>
+        <validLinenumbers>214</validLinenumbers>
+        <validLinenumbers>215</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <moduleNodes realName="grp_dense_layer_fu_658">
+    <nodeIds>176</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_layer_block_32_64_8_s_fu_506">
+    <nodeIds>174</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_max_pool_32_16_s_fu_434">
+    <nodeIds>173</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_input_adapter_fu_352">
+    <nodeIds>169</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_max_pool_16_32_s_fu_378">
+    <nodeIds>171</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_max_pool_64_8_s_fu_522">
+    <nodeIds>175</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_layer_block_1_16_32_s_fu_366">
+    <nodeIds>170</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_layer_block_16_32_16_s_fu_418">
+    <nodeIds>172</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="conv2_bias" portID="100">
+    <nodeIds>172</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv2_weights" portID="100">
+    <nodeIds>172</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv3_bias" portID="100">
+    <nodeIds>174</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="conv3_weights" portID="100">
+    <nodeIds>174</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dense_bias" portID="100">
+    <nodeIds>176</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dense_weights" portID="100">
+    <nodeIds>176</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_10" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_11" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_12" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_13" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_14" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_15" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_16" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_17" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_18" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_19" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_20" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_21" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_6" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_7" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_8" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_9" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_1" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_10" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_11" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_12" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_13" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_14" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_15" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_16" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_17" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_18" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_19" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_2" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_20" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_21" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_22" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_23" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_24" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_25" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_26" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_27" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_28" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_29" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_3" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_30" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_31" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_32" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_33" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_34" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_35" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_36" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_37" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_38" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_39" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_4" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_40" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_41" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_42" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_43" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_44" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_45" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_46" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_47" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_48" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_49" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_5" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_50" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_51" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_52" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_53" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_6" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_7" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_8" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_9" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con" portID="100">
+    <nodeIds>172</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_1" portID="100">
+    <nodeIds>172</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons" portID="100">
+    <nodeIds>170</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_1" portID="100">
+    <nodeIds>170</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con" portID="100">
+    <nodeIds>174</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_1" portID="100">
+    <nodeIds>174</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_10" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_11" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_12" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_13" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_14" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_15" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_16" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_17" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_18" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_19" portID="100">
+    <nodeIds>173</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_20" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_21" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_22" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_23" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_24" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_25" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_26" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_27" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_28" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_29" portID="100">
+    <nodeIds>171</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_3" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_4" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_5" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_6" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_7" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_9" portID="100">
+    <nodeIds>175</nodeIds>
+  </memoryPorts>
+  <ioPorts name="INPUT_STREAM_V_data_V">
+    <contents name="call">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="INPUT_STREAM_V_keep_V">
+    <contents name="call">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="INPUT_STREAM_V_last_V">
+    <contents name="call">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="INPUT_STREAM_V_strb_V">
+    <contents name="call">
+      <nodeIds>169</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_data_V">
+    <contents name="call">
+      <nodeIds>176</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_keep_V">
+    <contents name="call">
+      <nodeIds>176</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_last_V">
+    <contents name="call">
+      <nodeIds>176</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_strb_V">
+    <contents name="call">
+      <nodeIds>176</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1"/>
+    <states id="2">
+      <operations id="169" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="169" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="170" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="170" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="171" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="171" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="172" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="172" stage="1" latency="2"/>
+    </states>
+    <states id="10">
+      <operations id="173" stage="2" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="173" stage="1" latency="2"/>
+    </states>
+    <states id="12">
+      <operations id="174" stage="2" latency="2"/>
+    </states>
+    <states id="13">
+      <operations id="174" stage="1" latency="2"/>
+    </states>
+    <states id="14">
+      <operations id="175" stage="2" latency="2"/>
+    </states>
+    <states id="15">
+      <operations id="175" stage="1" latency="2"/>
+    </states>
+    <states id="16">
+      <operations id="176" stage="2" latency="2"/>
+    </states>
+    <states id="17">
+      <operations id="176" stage="1" latency="2"/>
+    </states>
+    <states id="18">
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="vgg_accelerator" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="329008" mMaxLatency="329008" mIsDfPipe="true">
+      <basicBlocks>178</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.7/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.0/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.1/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.2/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.3/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.4/@sink.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.5/@sink.0/@inst">
+        <processe_list name="input_adapter_U0" ssdmobj_id="169">
+          <pins>
+            <port name="INPUT_STREAM_V_data_V" type="SIOType" top_port_object_id="" top_port_object_id_reference="_203" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="input_adapter_U0" ssdmobj_id="169" object_id="_214"/>
+          </pins>
+          <pins>
+            <port name="INPUT_STREAM_V_keep_V" type="SIOType" top_port_object_id="" top_port_object_id_reference="_204" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="input_adapter_U0" ssdmobj_id="169" object_id="_214"/>
+          </pins>
+          <pins>
+            <port name="INPUT_STREAM_V_strb_V" type="SIOType" top_port_object_id="" top_port_object_id_reference="_205" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="input_adapter_U0" ssdmobj_id="169" object_id="_214"/>
+          </pins>
+          <pins>
+            <port name="INPUT_STREAM_V_last_V" type="SIOType" top_port_object_id="" top_port_object_id_reference="_206" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="input_adapter_U0" ssdmobj_id="169" object_id="_214"/>
+          </pins>
+        </processe_list>
+        <processe_list name="layer_block_1_16_32_U0" ssdmobj_id="170"/>
+        <processe_list name="max_pool_16_32_U0" ssdmobj_id="171"/>
+        <processe_list name="layer_block_16_32_16_U0" ssdmobj_id="172"/>
+        <processe_list name="max_pool_32_16_U0" ssdmobj_id="173"/>
+        <processe_list name="layer_block_32_64_8_U0" ssdmobj_id="174"/>
+        <processe_list name="max_pool_64_8_U0" ssdmobj_id="175"/>
+        <processe_list name="dense_layer_U0" ssdmobj_id="176">
+          <pins>
+            <port name="OUTPUT_STREAM_V_data_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_207" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dense_layer_U0" ssdmobj_id="176" object_id="_230"/>
+          </pins>
+          <pins>
+            <port name="OUTPUT_STREAM_V_keep_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_208" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dense_layer_U0" ssdmobj_id="176" object_id="_230"/>
+          </pins>
+          <pins>
+            <port name="OUTPUT_STREAM_V_strb_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_209" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dense_layer_U0" ssdmobj_id="176" object_id="_230"/>
+          </pins>
+          <pins>
+            <port name="OUTPUT_STREAM_V_last_V" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="_210" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dense_layer_U0" ssdmobj_id="176" object_id="_230"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="128" bitwidth="8" suggested_type="0" suggested_depth="128" name="s_input" ssdmobj_id="9">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="input_adapter_U0" ssdmobj_id="169" object_id="_214"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="layer_block_1_16_32_U0" ssdmobj_id="170" object_id="_242"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="128" bitwidth="8" suggested_type="0" suggested_depth="128" name="s_conv1" ssdmobj_id="12">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="layer_block_1_16_32_U0" ssdmobj_id="170" object_id="_242"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="max_pool_16_32_U0" ssdmobj_id="171" object_id="_248"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="128" bitwidth="8" suggested_type="0" suggested_depth="128" name="s_pool1" ssdmobj_id="29">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="max_pool_16_32_U0" ssdmobj_id="171" object_id="_248"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="layer_block_16_32_16_U0" ssdmobj_id="172" object_id="_254"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="64" bitwidth="8" suggested_type="0" suggested_depth="64" name="s_conv2" ssdmobj_id="34">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="layer_block_16_32_16_U0" ssdmobj_id="172" object_id="_254"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="max_pool_32_16_U0" ssdmobj_id="173" object_id="_260"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="64" bitwidth="8" suggested_type="0" suggested_depth="64" name="s_pool2" ssdmobj_id="67">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="max_pool_32_16_U0" ssdmobj_id="173" object_id="_260"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="layer_block_32_64_8_U0" ssdmobj_id="174" object_id="_266"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="64" bitwidth="8" suggested_type="0" suggested_depth="64" name="s_conv3" ssdmobj_id="72">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="layer_block_32_64_8_U0" ssdmobj_id="174" object_id="_266"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="max_pool_64_8_U0" ssdmobj_id="175" object_id="_272"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="64" bitwidth="8" suggested_type="0" suggested_depth="64" name="s_pool3" ssdmobj_id="137">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="max_pool_64_8_U0" ssdmobj_id="175" object_id="_272"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="dense_layer_U0" ssdmobj_id="176" object_id="_230"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

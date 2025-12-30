@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'vgg_accelerator'
+================================================================
+* Date:           Thu Dec 11 20:07:55 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        vgg_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.115 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline |
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type   |
+    +---------+---------+----------+----------+--------+--------+----------+
+    |   329008|   329008|  3.290 ms|  3.290 ms|  325637|  325637|  dataflow|
+    +---------+---------+----------+----------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+------------------------+---------+---------+-----------+-----------+--------+--------+---------+
+        |                         |                        |  Latency (cycles) |   Latency (absolute)  |     Interval    | Pipeline|
+        |         Instance        |         Module         |   min   |   max   |    min    |    max    |   min  |   max  |   Type  |
+        +-------------------------+------------------------+---------+---------+-----------+-----------+--------+--------+---------+
+        |input_adapter_U0         |input_adapter           |     1026|     1026|  10.260 us|  10.260 us|    1026|    1026|       no|
+        |layer_block_1_16_32_U0   |layer_block_1_16_32_s   |    16457|    16457|   0.165 ms|   0.165 ms|   16457|   16457|       no|
+        |max_pool_16_32_U0        |max_pool_16_32_s        |    16387|    16387|   0.164 ms|   0.164 ms|   16387|   16387|       no|
+        |layer_block_16_32_16_U0  |layer_block_16_32_16_s  |   325636|   325636|   3.256 ms|   3.256 ms|  325636|  325636|       no|
+        |max_pool_32_16_U0        |max_pool_32_16_s        |     8194|     8194|  81.940 us|  81.940 us|    8194|    8194|       no|
+        |layer_block_32_64_8_U0   |layer_block_32_64_8_s   |   293764|   293764|   2.938 ms|   2.938 ms|  293764|  293764|       no|
+        |max_pool_64_8_U0         |max_pool_64_8_s         |     4098|     4098|  40.980 us|  40.980 us|    4098|    4098|       no|
+        |dense_layer_U0           |dense_layer             |     5136|     5136|  51.360 us|  51.360 us|    5136|    5136|       no|
+        +-------------------------+------------------------+---------+---------+-----------+-----------+--------+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|     693|    1018|    -|
+|Instance         |       39|     0|   14442|   39974|    0|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |       39|     0|   15135|   40994|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       13|     0|       6|      35|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+------------------------+---------+----+------+-------+-----+
+    |         Instance        |         Module         | BRAM_18K| DSP|  FF  |  LUT  | URAM|
+    +-------------------------+------------------------+---------+----+------+-------+-----+
+    |CTRL_BUS_s_axi_U         |CTRL_BUS_s_axi          |        0|   0|    36|     40|    0|
+    |dense_layer_U0           |dense_layer             |        2|   0|   107|    658|    0|
+    |input_adapter_U0         |input_adapter           |        0|   0|    19|    116|    0|
+    |layer_block_16_32_16_U0  |layer_block_16_32_16_s  |       11|   0|  2745|   4793|    0|
+    |layer_block_1_16_32_U0   |layer_block_1_16_32_s   |        0|   0|  1076|  17788|    0|
+    |layer_block_32_64_8_U0   |layer_block_32_64_8_s   |       26|   0|  5050|   6939|    0|
+    |max_pool_16_32_U0        |max_pool_16_32_s        |        0|   0|   826|   2135|    0|
+    |max_pool_32_16_U0        |max_pool_32_16_s        |        0|   0|  1573|   2627|    0|
+    |max_pool_64_8_U0         |max_pool_64_8_s         |        0|   0|  3010|   4878|    0|
+    +-------------------------+------------------------+---------+----+------+-------+-----+
+    |Total                    |                        |       39|   0| 14442|  39974|    0|
+    +-------------------------+------------------------+---------+----+------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------+---------+----+----+-----+------+-----+---------+
+    |    Name   | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-----------+---------+----+----+-----+------+-----+---------+
+    |s_conv1_U  |        0|  99|   0|    -|   128|    8|     1024|
+    |s_conv2_U  |        0|  99|   0|    -|    64|    8|      512|
+    |s_conv3_U  |        0|  99|   0|    -|    64|    8|      512|
+    |s_input_U  |        0|  99|   0|    -|   128|    8|     1024|
+    |s_pool1_U  |        0|  99|   0|    -|   128|    8|     1024|
+    |s_pool2_U  |        0|  99|   0|    -|    64|    8|      512|
+    |s_pool3_U  |        0|  99|   0|    -|    64|    8|      512|
+    +-----------+---------+----+----+-----+------+-----+---------+
+    |Total      |        0| 693|   0|    0|   640|   56|     5120|
+    +-----------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+------------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++------------------------+-----+-----+------------+------------------------+--------------+
+|s_axi_CTRL_BUS_AWVALID  |   in|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_AWREADY  |  out|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_AWADDR   |   in|    4|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WVALID   |   in|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WREADY   |  out|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WDATA    |   in|   32|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_WSTRB    |   in|    4|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_ARVALID  |   in|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_ARREADY  |  out|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_ARADDR   |   in|    4|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RVALID   |  out|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RREADY   |   in|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RDATA    |  out|   32|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_RRESP    |  out|    2|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_BVALID   |  out|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_BREADY   |   in|    1|       s_axi|                CTRL_BUS|   return void|
+|s_axi_CTRL_BUS_BRESP    |  out|    2|       s_axi|                CTRL_BUS|   return void|
+|ap_clk                  |   in|    1|  ap_ctrl_hs|         vgg_accelerator|  return value|
+|ap_rst_n                |   in|    1|  ap_ctrl_hs|         vgg_accelerator|  return value|
+|interrupt               |  out|    1|  ap_ctrl_hs|         vgg_accelerator|  return value|
+|INPUT_STREAM_TDATA      |   in|   32|        axis|   INPUT_STREAM_V_data_V|       pointer|
+|INPUT_STREAM_TKEEP      |   in|    4|        axis|   INPUT_STREAM_V_keep_V|       pointer|
+|INPUT_STREAM_TSTRB      |   in|    4|        axis|   INPUT_STREAM_V_strb_V|       pointer|
+|INPUT_STREAM_TLAST      |   in|    1|        axis|   INPUT_STREAM_V_last_V|       pointer|
+|INPUT_STREAM_TVALID     |   in|    1|        axis|   INPUT_STREAM_V_last_V|       pointer|
+|INPUT_STREAM_TREADY     |  out|    1|        axis|   INPUT_STREAM_V_last_V|       pointer|
+|OUTPUT_STREAM_TDATA     |  out|   32|        axis|  OUTPUT_STREAM_V_data_V|       pointer|
+|OUTPUT_STREAM_TKEEP     |  out|    4|        axis|  OUTPUT_STREAM_V_keep_V|       pointer|
+|OUTPUT_STREAM_TSTRB     |  out|    4|        axis|  OUTPUT_STREAM_V_strb_V|       pointer|
+|OUTPUT_STREAM_TLAST     |  out|    1|        axis|  OUTPUT_STREAM_V_last_V|       pointer|
+|OUTPUT_STREAM_TVALID    |  out|    1|        axis|  OUTPUT_STREAM_V_last_V|       pointer|
+|OUTPUT_STREAM_TREADY    |   in|    1|        axis|  OUTPUT_STREAM_V_last_V|       pointer|
++------------------------+-----+-----+------------+------------------------+--------------+
+

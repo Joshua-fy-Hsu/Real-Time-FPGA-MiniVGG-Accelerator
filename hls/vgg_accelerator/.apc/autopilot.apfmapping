@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="weights.h" path="D:\University\Junior\HLS\VGG_Accelerator\hls\weights.h"/>
+    <originFiles name="vgg_accelerator.cpp" path="D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator.cpp"/>
+    <originFiles name="definitions.h" path="D:\University\Junior\HLS\VGG_Accelerator\hls\definitions.h"/>
+  </source>
+  <testbench>
+    <originFiles name="vgg_tb.cpp" path="D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

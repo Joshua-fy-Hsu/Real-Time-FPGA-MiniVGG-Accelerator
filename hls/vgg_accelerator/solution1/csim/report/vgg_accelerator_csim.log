@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../vgg_accelerator.cpp in debug mode
+   Generating csim.exe
+--- Starting Mini-VGG Accelerator Testbench ---
+[TB] Generating 32x32 input image...
+[TB] Invoking vgg_accelerator...
+[TB] Reading outputs...
+ -> Output Class 0: Raw=-128 Fixed=-8 Last=0
+ -> Output Class 1: Raw=127 Fixed=7.9375 Last=1
+--- Testbench Completed Successfully ---
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 16384
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

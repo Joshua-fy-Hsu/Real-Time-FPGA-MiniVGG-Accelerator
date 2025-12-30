@@ -1,0 +1,416 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8'" level="0">
+<item name = "Date">Thu Dec 11 20:07:37 2025
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">vgg_accelerator</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu5eg-sfvc784-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.115 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">36, 36, 0.360 us, 0.360 us, 36, 36, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_71_8">34, 34, 5, 2, 2, 16, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 1687, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 0, 0, 945, -</column>
+<column name="Memory">9, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, -, 151, -</column>
+<column name="Register">-, -, 306, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">3, 0, ~0, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_8s_5s_12_1_1_U327">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U328">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U329">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U330">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U331">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U332">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U333">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U334">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8s_5s_12_1_1_U335">mul_8s_5s_12_1_1, 0, 0, 0, 40, 0</column>
+<column name="mux_164_8_1_1_U318">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U319">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U320">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U321">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U322">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U323">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U324">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U325">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_164_8_1_1_U326">mux_164_8_1_1, 0, 0, 0, 65, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="conv2_weights_U">layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R, 9, 0, 0, 0, 4608, 5, 1, 23040</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="acc_V_21_fu_2026_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_23_fu_2107_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_25_fu_2188_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_27_fu_2269_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_29_fu_2350_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_31_fu_2478_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_33_fu_2559_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_35_fu_2640_p2">+, 0, 0, 39, 32, 32</column>
+<column name="acc_V_37_fu_2721_p2">+, 0, 0, 39, 32, 32</column>
+<column name="add_ln71_fu_1431_p2">+, 0, 0, 12, 5, 1</column>
+<column name="add_ln76_11_fu_1467_p2">+, 0, 0, 17, 10, 10</column>
+<column name="add_ln76_12_fu_1477_p2">+, 0, 0, 20, 13, 13</column>
+<column name="add_ln76_13_fu_1526_p2">+, 0, 0, 20, 13, 1</column>
+<column name="add_ln76_14_fu_1575_p2">+, 0, 0, 20, 13, 2</column>
+<column name="add_ln76_15_fu_1624_p2">+, 0, 0, 20, 13, 2</column>
+<column name="add_ln76_16_fu_1673_p2">+, 0, 0, 20, 13, 3</column>
+<column name="add_ln76_17_fu_1950_p2">+, 0, 0, 20, 13, 3</column>
+<column name="add_ln76_18_fu_1960_p2">+, 0, 0, 20, 13, 3</column>
+<column name="add_ln76_19_fu_1970_p2">+, 0, 0, 20, 13, 3</column>
+<column name="add_ln76_20_fu_1980_p2">+, 0, 0, 20, 13, 4</column>
+<column name="add_ln76_fu_1457_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln856_fu_2834_p2">+, 0, 0, 14, 7, 7</column>
+<column name="p_Val2_40_fu_2828_p2">+, 0, 0, 15, 8, 8</column>
+<column name="ret_V_10_fu_2174_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_11_fu_2255_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_12_fu_2336_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_13_fu_2464_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_14_fu_2545_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_15_fu_2626_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_16_fu_2707_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_9_fu_2093_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ret_V_fu_2012_p2">+, 0, 0, 40, 33, 33</column>
+<column name="ap_block_pp0_stage0_01001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state5_pp0_stage0_iter2">and, 0, 0, 2, 1, 1</column>
+<column name="deleted_zeros_fu_2884_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_10_fu_2046_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_11_fu_2127_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_12_fu_2208_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_13_fu_2289_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_14_fu_2421_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_15_fu_2498_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_16_fu_2579_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_17_fu_2660_p2">and, 0, 0, 2, 1, 1</column>
+<column name="overflow_18_fu_2741_p2">and, 0, 0, 2, 1, 1</column>
+<column name="Range1_all_zeros_fu_2858_p2">icmp, 0, 0, 11, 11, 1</column>
+<column name="icmp_ln71_2_fu_1874_p2">icmp, 0, 0, 10, 5, 6</column>
+<column name="icmp_ln71_fu_1425_p2">icmp, 0, 0, 10, 5, 6</column>
+<column name="or_ln888_fu_2878_p2">or, 0, 0, 2, 1, 1</column>
+<column name="overflow_fu_2896_p2">or, 0, 0, 2, 1, 1</column>
+<column name="acc_V_22_fu_2066_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_24_fu_2147_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_26_fu_2228_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_28_fu_2309_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_30_fu_2438_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_32_fu_2518_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_34_fu_2599_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_36_fu_2680_p3">select, 0, 0, 32, 1, 32</column>
+<column name="acc_V_38_fu_2784_p3">select, 0, 0, 30, 1, 1</column>
+<column name="acc_V_fu_2761_p3">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln302_fu_2902_p3">select, 0, 0, 7, 1, 2</column>
+<column name="select_ln346_10_fu_2220_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_11_fu_2301_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_12_fu_2430_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_13_fu_2510_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_14_fu_2591_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_15_fu_2672_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_16_fu_2753_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_9_fu_2139_p3">select, 0, 0, 33, 1, 31</column>
+<column name="select_ln346_fu_2058_p3">select, 0, 0, 33, 1, 31</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln302_10_fu_2214_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_11_fu_2295_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_12_fu_2426_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_13_fu_2504_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_14_fu_2585_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_15_fu_2666_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_16_fu_2747_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_9_fu_2133_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln302_fu_2052_p2">xor, 0, 0, 2, 1, 1</column>
+<column name="xor_ln888_fu_2872_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_10_fu_2040_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_11_fu_2121_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_12_fu_2202_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_13_fu_2283_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_14_fu_2416_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_15_fu_2492_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_16_fu_2573_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_17_fu_2654_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_18_fu_2735_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln895_fu_2890_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_ch">9, 2, 5, 10</column>
+<column name="ch_2_fu_414">9, 2, 5, 10</column>
+<column name="conv2_weights_address0">14, 3, 13, 39</column>
+<column name="conv2_weights_address1">14, 3, 13, 39</column>
+<column name="conv2_weights_address2">14, 3, 13, 39</column>
+<column name="conv2_weights_address3">14, 3, 13, 39</column>
+<column name="lhs_fu_410">9, 2, 32, 64</column>
+<column name="s_conv2_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="acc_V_29_reg_3066">32, 0, 32, 0</column>
+<column name="acc_V_reg_3097">32, 0, 32, 0</column>
+<column name="add_ln76_12_reg_2933">13, 0, 13, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="ch_2_fu_414">5, 0, 5, 0</column>
+<column name="icmp_ln71_2_reg_3011">1, 0, 1, 0</column>
+<column name="icmp_ln71_2_reg_3011_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln71_reg_2929">1, 0, 1, 0</column>
+<column name="lhs_fu_410">32, 0, 32, 0</column>
+<column name="mul_ln1347_10_reg_3025">12, 0, 12, 0</column>
+<column name="mul_ln1347_11_reg_3030">12, 0, 12, 0</column>
+<column name="mul_ln1347_12_reg_3035">12, 0, 12, 0</column>
+<column name="mul_ln1347_13_reg_3077">12, 0, 12, 0</column>
+<column name="mul_ln1347_14_reg_3082">12, 0, 12, 0</column>
+<column name="mul_ln1347_15_reg_3087">12, 0, 12, 0</column>
+<column name="mul_ln1347_16_reg_3092">12, 0, 12, 0</column>
+<column name="mul_ln1347_9_reg_3020">12, 0, 12, 0</column>
+<column name="mul_ln1347_reg_3015">12, 0, 12, 0</column>
+<column name="p_Result_26_reg_3060">1, 0, 1, 0</column>
+<column name="p_Result_27_reg_3071">1, 0, 1, 0</column>
+<column name="px_V_10_reg_2966">8, 0, 8, 0</column>
+<column name="px_V_11_reg_2976">8, 0, 8, 0</column>
+<column name="px_V_12_reg_2986">8, 0, 8, 0</column>
+<column name="px_V_13_reg_2991">8, 0, 8, 0</column>
+<column name="px_V_14_reg_2996">8, 0, 8, 0</column>
+<column name="px_V_15_reg_3001">8, 0, 8, 0</column>
+<column name="px_V_16_reg_3006">8, 0, 8, 0</column>
+<column name="px_V_9_reg_2956">8, 0, 8, 0</column>
+<column name="px_V_reg_2946">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, layer_block&lt;16, 32, 16&gt;_Pipeline_VITIS_LOOP_71_8, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, layer_block&lt;16, 32, 16&gt;_Pipeline_VITIS_LOOP_71_8, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, layer_block&lt;16, 32, 16&gt;_Pipeline_VITIS_LOOP_71_8, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, layer_block&lt;16, 32, 16&gt;_Pipeline_VITIS_LOOP_71_8, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, layer_block&lt;16, 32, 16&gt;_Pipeline_VITIS_LOOP_71_8, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, layer_block&lt;16, 32, 16&gt;_Pipeline_VITIS_LOOP_71_8, return value</column>
+<column name="sext_ln66">in, 16, ap_none, sext_ln66, scalar</column>
+<column name="zext_ln71_2">in, 9, ap_none, zext_ln71_2, scalar</column>
+<column name="zext_ln76">in, 12, ap_none, zext_ln76, scalar</column>
+<column name="window_V_2_i_reload">in, 8, ap_none, window_V_2_i_reload, scalar</column>
+<column name="window_V_522_2_i_reload">in, 8, ap_none, window_V_522_2_i_reload, scalar</column>
+<column name="window_V_531_2_i_reload">in, 8, ap_none, window_V_531_2_i_reload, scalar</column>
+<column name="window_V_540_2_i_reload">in, 8, ap_none, window_V_540_2_i_reload, scalar</column>
+<column name="window_V_549_2_i_reload">in, 8, ap_none, window_V_549_2_i_reload, scalar</column>
+<column name="window_V_558_2_i_reload">in, 8, ap_none, window_V_558_2_i_reload, scalar</column>
+<column name="window_V_567_2_i_reload">in, 8, ap_none, window_V_567_2_i_reload, scalar</column>
+<column name="window_V_576_2_i_reload">in, 8, ap_none, window_V_576_2_i_reload, scalar</column>
+<column name="window_V_585_2_i_reload">in, 8, ap_none, window_V_585_2_i_reload, scalar</column>
+<column name="window_V_594_2_i_reload">in, 8, ap_none, window_V_594_2_i_reload, scalar</column>
+<column name="window_V_603_2_i_reload">in, 8, ap_none, window_V_603_2_i_reload, scalar</column>
+<column name="window_V_612_2_i_reload">in, 8, ap_none, window_V_612_2_i_reload, scalar</column>
+<column name="window_V_621_2_i_reload">in, 8, ap_none, window_V_621_2_i_reload, scalar</column>
+<column name="window_V_630_2_i_reload">in, 8, ap_none, window_V_630_2_i_reload, scalar</column>
+<column name="window_V_639_2_i_reload">in, 8, ap_none, window_V_639_2_i_reload, scalar</column>
+<column name="window_V_648_2_i_reload">in, 8, ap_none, window_V_648_2_i_reload, scalar</column>
+<column name="window_V_514_2_i_reload">in, 8, ap_none, window_V_514_2_i_reload, scalar</column>
+<column name="window_V_523_2_i_reload">in, 8, ap_none, window_V_523_2_i_reload, scalar</column>
+<column name="window_V_532_2_i_reload">in, 8, ap_none, window_V_532_2_i_reload, scalar</column>
+<column name="window_V_541_2_i_reload">in, 8, ap_none, window_V_541_2_i_reload, scalar</column>
+<column name="window_V_550_2_i_reload">in, 8, ap_none, window_V_550_2_i_reload, scalar</column>
+<column name="window_V_559_2_i_reload">in, 8, ap_none, window_V_559_2_i_reload, scalar</column>
+<column name="window_V_568_2_i_reload">in, 8, ap_none, window_V_568_2_i_reload, scalar</column>
+<column name="window_V_577_2_i_reload">in, 8, ap_none, window_V_577_2_i_reload, scalar</column>
+<column name="window_V_586_2_i_reload">in, 8, ap_none, window_V_586_2_i_reload, scalar</column>
+<column name="window_V_595_2_i_reload">in, 8, ap_none, window_V_595_2_i_reload, scalar</column>
+<column name="window_V_604_2_i_reload">in, 8, ap_none, window_V_604_2_i_reload, scalar</column>
+<column name="window_V_613_2_i_reload">in, 8, ap_none, window_V_613_2_i_reload, scalar</column>
+<column name="window_V_622_2_i_reload">in, 8, ap_none, window_V_622_2_i_reload, scalar</column>
+<column name="window_V_631_2_i_reload">in, 8, ap_none, window_V_631_2_i_reload, scalar</column>
+<column name="window_V_640_2_i_reload">in, 8, ap_none, window_V_640_2_i_reload, scalar</column>
+<column name="window_V_649_2_i_reload">in, 8, ap_none, window_V_649_2_i_reload, scalar</column>
+<column name="window_V_234_reload">in, 8, ap_none, window_V_234_reload, scalar</column>
+<column name="window_V_241_reload">in, 8, ap_none, window_V_241_reload, scalar</column>
+<column name="window_V_248_reload">in, 8, ap_none, window_V_248_reload, scalar</column>
+<column name="window_V_255_reload">in, 8, ap_none, window_V_255_reload, scalar</column>
+<column name="window_V_262_reload">in, 8, ap_none, window_V_262_reload, scalar</column>
+<column name="window_V_269_reload">in, 8, ap_none, window_V_269_reload, scalar</column>
+<column name="window_V_276_reload">in, 8, ap_none, window_V_276_reload, scalar</column>
+<column name="window_V_283_reload">in, 8, ap_none, window_V_283_reload, scalar</column>
+<column name="window_V_290_reload">in, 8, ap_none, window_V_290_reload, scalar</column>
+<column name="window_V_297_reload">in, 8, ap_none, window_V_297_reload, scalar</column>
+<column name="window_V_304_reload">in, 8, ap_none, window_V_304_reload, scalar</column>
+<column name="window_V_311_reload">in, 8, ap_none, window_V_311_reload, scalar</column>
+<column name="window_V_318_reload">in, 8, ap_none, window_V_318_reload, scalar</column>
+<column name="window_V_325_reload">in, 8, ap_none, window_V_325_reload, scalar</column>
+<column name="window_V_332_reload">in, 8, ap_none, window_V_332_reload, scalar</column>
+<column name="window_V_226_reload">in, 8, ap_none, window_V_226_reload, scalar</column>
+<column name="window_V_516_2_i_reload">in, 8, ap_none, window_V_516_2_i_reload, scalar</column>
+<column name="window_V_525_2_i_reload">in, 8, ap_none, window_V_525_2_i_reload, scalar</column>
+<column name="window_V_534_2_i_reload">in, 8, ap_none, window_V_534_2_i_reload, scalar</column>
+<column name="window_V_543_2_i_reload">in, 8, ap_none, window_V_543_2_i_reload, scalar</column>
+<column name="window_V_552_2_i_reload">in, 8, ap_none, window_V_552_2_i_reload, scalar</column>
+<column name="window_V_561_2_i_reload">in, 8, ap_none, window_V_561_2_i_reload, scalar</column>
+<column name="window_V_570_2_i_reload">in, 8, ap_none, window_V_570_2_i_reload, scalar</column>
+<column name="window_V_579_2_i_reload">in, 8, ap_none, window_V_579_2_i_reload, scalar</column>
+<column name="window_V_588_2_i_reload">in, 8, ap_none, window_V_588_2_i_reload, scalar</column>
+<column name="window_V_597_2_i_reload">in, 8, ap_none, window_V_597_2_i_reload, scalar</column>
+<column name="window_V_606_2_i_reload">in, 8, ap_none, window_V_606_2_i_reload, scalar</column>
+<column name="window_V_615_2_i_reload">in, 8, ap_none, window_V_615_2_i_reload, scalar</column>
+<column name="window_V_624_2_i_reload">in, 8, ap_none, window_V_624_2_i_reload, scalar</column>
+<column name="window_V_633_2_i_reload">in, 8, ap_none, window_V_633_2_i_reload, scalar</column>
+<column name="window_V_642_2_i_reload">in, 8, ap_none, window_V_642_2_i_reload, scalar</column>
+<column name="window_V_651_2_i_reload">in, 8, ap_none, window_V_651_2_i_reload, scalar</column>
+<column name="window_V_235_reload">in, 8, ap_none, window_V_235_reload, scalar</column>
+<column name="window_V_242_reload">in, 8, ap_none, window_V_242_reload, scalar</column>
+<column name="window_V_249_reload">in, 8, ap_none, window_V_249_reload, scalar</column>
+<column name="window_V_256_reload">in, 8, ap_none, window_V_256_reload, scalar</column>
+<column name="window_V_263_reload">in, 8, ap_none, window_V_263_reload, scalar</column>
+<column name="window_V_270_reload">in, 8, ap_none, window_V_270_reload, scalar</column>
+<column name="window_V_277_reload">in, 8, ap_none, window_V_277_reload, scalar</column>
+<column name="window_V_284_reload">in, 8, ap_none, window_V_284_reload, scalar</column>
+<column name="window_V_291_reload">in, 8, ap_none, window_V_291_reload, scalar</column>
+<column name="window_V_298_reload">in, 8, ap_none, window_V_298_reload, scalar</column>
+<column name="window_V_305_reload">in, 8, ap_none, window_V_305_reload, scalar</column>
+<column name="window_V_312_reload">in, 8, ap_none, window_V_312_reload, scalar</column>
+<column name="window_V_319_reload">in, 8, ap_none, window_V_319_reload, scalar</column>
+<column name="window_V_326_reload">in, 8, ap_none, window_V_326_reload, scalar</column>
+<column name="window_V_333_reload">in, 8, ap_none, window_V_333_reload, scalar</column>
+<column name="window_V_227_reload">in, 8, ap_none, window_V_227_reload, scalar</column>
+<column name="window_V_236_reload">in, 8, ap_none, window_V_236_reload, scalar</column>
+<column name="window_V_243_reload">in, 8, ap_none, window_V_243_reload, scalar</column>
+<column name="window_V_250_reload">in, 8, ap_none, window_V_250_reload, scalar</column>
+<column name="window_V_257_reload">in, 8, ap_none, window_V_257_reload, scalar</column>
+<column name="window_V_264_reload">in, 8, ap_none, window_V_264_reload, scalar</column>
+<column name="window_V_271_reload">in, 8, ap_none, window_V_271_reload, scalar</column>
+<column name="window_V_278_reload">in, 8, ap_none, window_V_278_reload, scalar</column>
+<column name="window_V_285_reload">in, 8, ap_none, window_V_285_reload, scalar</column>
+<column name="window_V_292_reload">in, 8, ap_none, window_V_292_reload, scalar</column>
+<column name="window_V_299_reload">in, 8, ap_none, window_V_299_reload, scalar</column>
+<column name="window_V_306_reload">in, 8, ap_none, window_V_306_reload, scalar</column>
+<column name="window_V_313_reload">in, 8, ap_none, window_V_313_reload, scalar</column>
+<column name="window_V_320_reload">in, 8, ap_none, window_V_320_reload, scalar</column>
+<column name="window_V_327_reload">in, 8, ap_none, window_V_327_reload, scalar</column>
+<column name="window_V_334_reload">in, 8, ap_none, window_V_334_reload, scalar</column>
+<column name="window_V_228_reload">in, 8, ap_none, window_V_228_reload, scalar</column>
+<column name="window_V_519_2_i_reload">in, 8, ap_none, window_V_519_2_i_reload, scalar</column>
+<column name="window_V_528_2_i_reload">in, 8, ap_none, window_V_528_2_i_reload, scalar</column>
+<column name="window_V_537_2_i_reload">in, 8, ap_none, window_V_537_2_i_reload, scalar</column>
+<column name="window_V_546_2_i_reload">in, 8, ap_none, window_V_546_2_i_reload, scalar</column>
+<column name="window_V_555_2_i_reload">in, 8, ap_none, window_V_555_2_i_reload, scalar</column>
+<column name="window_V_564_2_i_reload">in, 8, ap_none, window_V_564_2_i_reload, scalar</column>
+<column name="window_V_573_2_i_reload">in, 8, ap_none, window_V_573_2_i_reload, scalar</column>
+<column name="window_V_582_2_i_reload">in, 8, ap_none, window_V_582_2_i_reload, scalar</column>
+<column name="window_V_591_2_i_reload">in, 8, ap_none, window_V_591_2_i_reload, scalar</column>
+<column name="window_V_600_2_i_reload">in, 8, ap_none, window_V_600_2_i_reload, scalar</column>
+<column name="window_V_609_2_i_reload">in, 8, ap_none, window_V_609_2_i_reload, scalar</column>
+<column name="window_V_618_2_i_reload">in, 8, ap_none, window_V_618_2_i_reload, scalar</column>
+<column name="window_V_627_2_i_reload">in, 8, ap_none, window_V_627_2_i_reload, scalar</column>
+<column name="window_V_636_2_i_reload">in, 8, ap_none, window_V_636_2_i_reload, scalar</column>
+<column name="window_V_645_2_i_reload">in, 8, ap_none, window_V_645_2_i_reload, scalar</column>
+<column name="window_V_654_2_i_reload">in, 8, ap_none, window_V_654_2_i_reload, scalar</column>
+<column name="window_V_237_reload">in, 8, ap_none, window_V_237_reload, scalar</column>
+<column name="window_V_244_reload">in, 8, ap_none, window_V_244_reload, scalar</column>
+<column name="window_V_251_reload">in, 8, ap_none, window_V_251_reload, scalar</column>
+<column name="window_V_258_reload">in, 8, ap_none, window_V_258_reload, scalar</column>
+<column name="window_V_265_reload">in, 8, ap_none, window_V_265_reload, scalar</column>
+<column name="window_V_272_reload">in, 8, ap_none, window_V_272_reload, scalar</column>
+<column name="window_V_279_reload">in, 8, ap_none, window_V_279_reload, scalar</column>
+<column name="window_V_286_reload">in, 8, ap_none, window_V_286_reload, scalar</column>
+<column name="window_V_293_reload">in, 8, ap_none, window_V_293_reload, scalar</column>
+<column name="window_V_300_reload">in, 8, ap_none, window_V_300_reload, scalar</column>
+<column name="window_V_307_reload">in, 8, ap_none, window_V_307_reload, scalar</column>
+<column name="window_V_314_reload">in, 8, ap_none, window_V_314_reload, scalar</column>
+<column name="window_V_321_reload">in, 8, ap_none, window_V_321_reload, scalar</column>
+<column name="window_V_328_reload">in, 8, ap_none, window_V_328_reload, scalar</column>
+<column name="window_V_335_reload">in, 8, ap_none, window_V_335_reload, scalar</column>
+<column name="window_V_229_reload">in, 8, ap_none, window_V_229_reload, scalar</column>
+<column name="window_V_238_reload">in, 8, ap_none, window_V_238_reload, scalar</column>
+<column name="window_V_245_reload">in, 8, ap_none, window_V_245_reload, scalar</column>
+<column name="window_V_252_reload">in, 8, ap_none, window_V_252_reload, scalar</column>
+<column name="window_V_259_reload">in, 8, ap_none, window_V_259_reload, scalar</column>
+<column name="window_V_266_reload">in, 8, ap_none, window_V_266_reload, scalar</column>
+<column name="window_V_273_reload">in, 8, ap_none, window_V_273_reload, scalar</column>
+<column name="window_V_280_reload">in, 8, ap_none, window_V_280_reload, scalar</column>
+<column name="window_V_287_reload">in, 8, ap_none, window_V_287_reload, scalar</column>
+<column name="window_V_294_reload">in, 8, ap_none, window_V_294_reload, scalar</column>
+<column name="window_V_301_reload">in, 8, ap_none, window_V_301_reload, scalar</column>
+<column name="window_V_308_reload">in, 8, ap_none, window_V_308_reload, scalar</column>
+<column name="window_V_315_reload">in, 8, ap_none, window_V_315_reload, scalar</column>
+<column name="window_V_322_reload">in, 8, ap_none, window_V_322_reload, scalar</column>
+<column name="window_V_329_reload">in, 8, ap_none, window_V_329_reload, scalar</column>
+<column name="window_V_336_reload">in, 8, ap_none, window_V_336_reload, scalar</column>
+<column name="window_V_230_reload">in, 8, ap_none, window_V_230_reload, scalar</column>
+<column name="s_conv2_din">out, 8, ap_fifo, s_conv2, pointer</column>
+<column name="s_conv2_num_data_valid">in, 7, ap_fifo, s_conv2, pointer</column>
+<column name="s_conv2_fifo_cap">in, 7, ap_fifo, s_conv2, pointer</column>
+<column name="s_conv2_full_n">in, 1, ap_fifo, s_conv2, pointer</column>
+<column name="s_conv2_write">out, 1, ap_fifo, s_conv2, pointer</column>
+</table>
+</item>
+</section>
+</profile>

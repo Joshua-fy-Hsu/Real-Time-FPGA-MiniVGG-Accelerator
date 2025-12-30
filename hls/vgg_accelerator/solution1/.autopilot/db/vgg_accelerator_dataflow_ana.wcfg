@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vgg_accelerator.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_vgg_accelerator_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator//AESL_inst_vgg_accelerator_activity">
+         <obj_property name="label">AESL_inst_vgg_accelerator_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_vgg_accelerator_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_vgg_accelerator_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator//AESL_inst_vgg_accelerator_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator//AESL_inst_vgg_accelerator_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator//AESL_inst_vgg_accelerator_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/input_adapter_U0_activity">
+            <obj_property name="label">input_adapter_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">input_adapter_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">input_adapter_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/input_adapter_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/input_adapter_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/input_adapter_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/layer_block_1_16_32_U0_activity">
+            <obj_property name="label">layer_block_1_16_32_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">layer_block_1_16_32_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">layer_block_1_16_32_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/layer_block_1_16_32_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/layer_block_1_16_32_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/layer_block_1_16_32_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity">
+               <obj_property name="label">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity">
+               <obj_property name="label">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/max_pool_16_32_U0_activity">
+            <obj_property name="label">max_pool_16_32_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">max_pool_16_32_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">max_pool_16_32_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/max_pool_16_32_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/max_pool_16_32_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/max_pool_16_32_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/layer_block_16_32_16_U0_activity">
+            <obj_property name="label">layer_block_16_32_16_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">layer_block_16_32_16_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">layer_block_16_32_16_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/layer_block_16_32_16_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/layer_block_16_32_16_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/layer_block_16_32_16_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity">
+               <obj_property name="label">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity">
+               <obj_property name="label">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity">
+               <obj_property name="label">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/max_pool_32_16_U0_activity">
+            <obj_property name="label">max_pool_32_16_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">max_pool_32_16_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">max_pool_32_16_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/max_pool_32_16_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/max_pool_32_16_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/max_pool_32_16_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/layer_block_32_64_8_U0_activity">
+            <obj_property name="label">layer_block_32_64_8_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">layer_block_32_64_8_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">layer_block_32_64_8_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/layer_block_32_64_8_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/layer_block_32_64_8_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/layer_block_32_64_8_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity">
+               <obj_property name="label">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity">
+               <obj_property name="label">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity">
+               <obj_property name="label">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/max_pool_64_8_U0_activity">
+            <obj_property name="label">max_pool_64_8_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">max_pool_64_8_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">max_pool_64_8_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/max_pool_64_8_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/max_pool_64_8_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/max_pool_64_8_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_layer_U0_activity">
+            <obj_property name="label">dense_layer_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">dense_layer_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">dense_layer_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_layer_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_layer_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_layer_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity">
+               <obj_property name="label">grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+            <wvobject type="group" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity">
+               <obj_property name="label">grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator//AESL_inst_vgg_accelerator_activity">
+      <obj_property name="ElementShortName">AESL_inst_vgg_accelerator_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_vgg_accelerator_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_vgg_accelerator_group">
+      <obj_property name="label">AESL_inst_vgg_accelerator</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/input_adapter_U0_activity">
+         <obj_property name="ElementShortName">input_adapter_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">input_adapter_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/layer_block_1_16_32_U0_activity">
+         <obj_property name="ElementShortName">layer_block_1_16_32_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">layer_block_1_16_32_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/max_pool_16_32_U0_activity">
+         <obj_property name="ElementShortName">max_pool_16_32_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">max_pool_16_32_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/layer_block_16_32_16_U0_activity">
+         <obj_property name="ElementShortName">layer_block_16_32_16_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">layer_block_16_32_16_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/max_pool_32_16_U0_activity">
+         <obj_property name="ElementShortName">max_pool_32_16_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">max_pool_32_16_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/layer_block_32_64_8_U0_activity">
+         <obj_property name="ElementShortName">layer_block_32_64_8_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">layer_block_32_64_8_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/max_pool_64_8_U0_activity">
+         <obj_property name="ElementShortName">max_pool_64_8_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">max_pool_64_8_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_layer_U0_activity">
+         <obj_property name="ElementShortName">dense_layer_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">dense_layer_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_vgg_accelerator_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="input_adapter_U0_group">
+         <obj_property name="label">input_adapter_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="input_adapter_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="input_adapter_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="input_adapter_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_input_group">
+               <obj_property name="label">s_input(s_input_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/s_input_blk_n">
+                  <obj_property name="ElementShortName">s_input_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_input_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/s_input_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/s_input_full_n">
+                  <obj_property name="ElementShortName">s_input_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_input_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/input_adapter_U0/s_input_write">
+                  <obj_property name="ElementShortName">s_input_write</obj_property>
+                  <obj_property name="ObjectShortName">s_input_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="layer_block_1_16_32_U0_group">
+         <obj_property name="label">layer_block_1_16_32_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity">
+            <obj_property name="ElementShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity">
+            <obj_property name="ElementShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_1_16_32_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_input_group">
+               <obj_property name="label">s_input(s_input_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/s_input_dout">
+                  <obj_property name="ElementShortName">s_input_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_input_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/s_input_empty_n">
+                  <obj_property name="ElementShortName">s_input_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_input_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/s_input_read">
+                  <obj_property name="ElementShortName">s_input_read</obj_property>
+                  <obj_property name="ObjectShortName">s_input_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_1_16_32_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_1_16_32_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_conv1_group">
+               <obj_property name="label">s_conv1(s_conv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/s_conv1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/s_conv1_full_n">
+                  <obj_property name="ElementShortName">s_conv1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/s_conv1_write">
+                  <obj_property name="ElementShortName">s_conv1_write</obj_property>
+                  <obj_property name="ObjectShortName">s_conv1_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_group">
+            <obj_property name="label">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_24/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_group">
+            <obj_property name="label">grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_1_16_32_U0/grp_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5_fu_32/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="max_pool_16_32_U0_group">
+         <obj_property name="label">max_pool_16_32_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="max_pool_16_32_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_conv1_group">
+               <obj_property name="label">s_conv1(s_conv1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_conv1_blk_n">
+                  <obj_property name="ElementShortName">s_conv1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_conv1_dout">
+                  <obj_property name="ElementShortName">s_conv1_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_conv1_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_conv1_empty_n">
+                  <obj_property name="ElementShortName">s_conv1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_conv1_read">
+                  <obj_property name="ElementShortName">s_conv1_read</obj_property>
+                  <obj_property name="ObjectShortName">s_conv1_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="max_pool_16_32_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="max_pool_16_32_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_pool1_group">
+               <obj_property name="label">s_pool1(s_pool1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_pool1_blk_n">
+                  <obj_property name="ElementShortName">s_pool1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_pool1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_pool1_full_n">
+                  <obj_property name="ElementShortName">s_pool1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_16_32_U0/s_pool1_write">
+                  <obj_property name="ElementShortName">s_pool1_write</obj_property>
+                  <obj_property name="ObjectShortName">s_pool1_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="layer_block_16_32_16_U0_group">
+         <obj_property name="label">layer_block_16_32_16_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity">
+            <obj_property name="ElementShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity">
+            <obj_property name="ElementShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity">
+            <obj_property name="ElementShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_16_32_16_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="conv2_bias_group">
+               <obj_property name="label">conv2_bias(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/conv2_bias_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/conv2_bias_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/conv2_bias_ce0">
+                  <obj_property name="ElementShortName">conv2_bias_ce0</obj_property>
+                  <obj_property name="ObjectShortName">conv2_bias_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="conv2_weights_group">
+               <obj_property name="label">conv2_weights(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/conv2_weights_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/conv2_weights_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/conv2_weights_ce0">
+                  <obj_property name="ElementShortName">conv2_weights_ce0</obj_property>
+                  <obj_property name="ObjectShortName">conv2_weights_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="s_pool1_group">
+               <obj_property name="label">s_pool1(s_pool1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/s_pool1_dout">
+                  <obj_property name="ElementShortName">s_pool1_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_pool1_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/s_pool1_empty_n">
+                  <obj_property name="ElementShortName">s_pool1_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool1_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/s_pool1_read">
+                  <obj_property name="ElementShortName">s_pool1_read</obj_property>
+                  <obj_property name="ObjectShortName">s_pool1_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_16_32_16_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_16_32_16_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_conv2_group">
+               <obj_property name="label">s_conv2(s_conv2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/s_conv2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/s_conv2_full_n">
+                  <obj_property name="ElementShortName">s_conv2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/s_conv2_write">
+                  <obj_property name="ElementShortName">s_conv2_write</obj_property>
+                  <obj_property name="ObjectShortName">s_conv2_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_group">
+            <obj_property name="label">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_1264/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_group">
+            <obj_property name="label">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6_fu_1272/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_group">
+            <obj_property name="label">grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_16_32_16_U0/grp_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_fu_1571/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="max_pool_32_16_U0_group">
+         <obj_property name="label">max_pool_32_16_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="max_pool_32_16_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_conv2_group">
+               <obj_property name="label">s_conv2(s_conv2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_conv2_blk_n">
+                  <obj_property name="ElementShortName">s_conv2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_conv2_dout">
+                  <obj_property name="ElementShortName">s_conv2_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_conv2_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_conv2_empty_n">
+                  <obj_property name="ElementShortName">s_conv2_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv2_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_conv2_read">
+                  <obj_property name="ElementShortName">s_conv2_read</obj_property>
+                  <obj_property name="ObjectShortName">s_conv2_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="max_pool_32_16_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="max_pool_32_16_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_pool2_group">
+               <obj_property name="label">s_pool2(s_pool2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_pool2_blk_n">
+                  <obj_property name="ElementShortName">s_pool2_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool2_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_pool2_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_pool2_full_n">
+                  <obj_property name="ElementShortName">s_pool2_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool2_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_32_16_U0/s_pool2_write">
+                  <obj_property name="ElementShortName">s_pool2_write</obj_property>
+                  <obj_property name="ObjectShortName">s_pool2_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="layer_block_32_64_8_U0_group">
+         <obj_property name="label">layer_block_32_64_8_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity">
+            <obj_property name="ElementShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity">
+            <obj_property name="ElementShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity">
+            <obj_property name="ElementShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_32_64_8_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="conv3_bias_group">
+               <obj_property name="label">conv3_bias(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/conv3_bias_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/conv3_bias_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/conv3_bias_ce0">
+                  <obj_property name="ElementShortName">conv3_bias_ce0</obj_property>
+                  <obj_property name="ObjectShortName">conv3_bias_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="conv3_weights_group">
+               <obj_property name="label">conv3_weights(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/conv3_weights_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/conv3_weights_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/conv3_weights_ce0">
+                  <obj_property name="ElementShortName">conv3_weights_ce0</obj_property>
+                  <obj_property name="ObjectShortName">conv3_weights_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="s_pool2_group">
+               <obj_property name="label">s_pool2(s_pool2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/s_pool2_dout">
+                  <obj_property name="ElementShortName">s_pool2_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_pool2_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/s_pool2_empty_n">
+                  <obj_property name="ElementShortName">s_pool2_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool2_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/s_pool2_read">
+                  <obj_property name="ElementShortName">s_pool2_read</obj_property>
+                  <obj_property name="ObjectShortName">s_pool2_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_32_64_8_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="layer_block_32_64_8_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_conv3_group">
+               <obj_property name="label">s_conv3(s_conv3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/s_conv3_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/s_conv3_full_n">
+                  <obj_property name="ElementShortName">s_conv3_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv3_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/s_conv3_write">
+                  <obj_property name="ElementShortName">s_conv3_write</obj_property>
+                  <obj_property name="ObjectShortName">s_conv3_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_group">
+            <obj_property name="label">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3_fu_2408/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_group">
+            <obj_property name="label">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6_fu_2416/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_group">
+            <obj_property name="label">grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/layer_block_32_64_8_U0/grp_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_fu_3003/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="max_pool_64_8_U0_group">
+         <obj_property name="label">max_pool_64_8_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="max_pool_64_8_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_conv3_group">
+               <obj_property name="label">s_conv3(s_conv3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_conv3_blk_n">
+                  <obj_property name="ElementShortName">s_conv3_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv3_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_conv3_dout">
+                  <obj_property name="ElementShortName">s_conv3_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_conv3_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_conv3_empty_n">
+                  <obj_property name="ElementShortName">s_conv3_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_conv3_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_conv3_read">
+                  <obj_property name="ElementShortName">s_conv3_read</obj_property>
+                  <obj_property name="ObjectShortName">s_conv3_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="max_pool_64_8_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="max_pool_64_8_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_pool3_group">
+               <obj_property name="label">s_pool3(s_pool3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_pool3_blk_n">
+                  <obj_property name="ElementShortName">s_pool3_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool3_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_pool3_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_pool3_full_n">
+                  <obj_property name="ElementShortName">s_pool3_full_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool3_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/max_pool_64_8_U0/s_pool3_write">
+                  <obj_property name="ElementShortName">s_pool3_write</obj_property>
+                  <obj_property name="ObjectShortName">s_pool3_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="dense_layer_U0_group">
+         <obj_property name="label">dense_layer_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity">
+            <obj_property name="ElementShortName">grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_activity</obj_property>
+         </wvobject>
+         <wvobject type="protoinst" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity">
+            <obj_property name="ElementShortName">grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="s_pool3_group">
+               <obj_property name="label">s_pool3(s_pool3_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/s_pool3_dout">
+                  <obj_property name="ElementShortName">s_pool3_dout[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">s_pool3_dout[7:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/s_pool3_empty_n">
+                  <obj_property name="ElementShortName">s_pool3_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">s_pool3_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/s_pool3_read">
+                  <obj_property name="ElementShortName">s_pool3_read</obj_property>
+                  <obj_property name="ObjectShortName">s_pool3_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dense_bias_group">
+               <obj_property name="label">dense_bias(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_bias_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_bias_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_bias_ce0">
+                  <obj_property name="ElementShortName">dense_bias_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dense_bias_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="dense_weights_group">
+               <obj_property name="label">dense_weights(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_weights_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_weights_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/dense_weights_ce0">
+                  <obj_property name="ElementShortName">dense_weights_ce0</obj_property>
+                  <obj_property name="ObjectShortName">dense_weights_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="dense_layer_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_group">
+            <obj_property name="label">grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_group">
+            <obj_property name="label">grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_vgg_accelerator_top/AESL_inst_vgg_accelerator/dense_layer_U0/grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

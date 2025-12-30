@@ -1,0 +1,110 @@
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:1683:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:1683:7: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:2657:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:2657:5: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:2671:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:2671:5: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:2685:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:2685:5: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:4296:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:4296:7: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8095:2: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+ for(int c=0; c<IN_CH; c++)
+ ^~~
+ VITIS_LOOP_31_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8095:2: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8096:9: warning: Added loop label VITIS_LOOP_32_2:   [xilinx-label-all-loops]
+        for(int h=0; h<2; h++)
+        ^~~
+        VITIS_LOOP_32_2: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8096:9: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8097:13: warning: Added loop label VITIS_LOOP_33_3:   [xilinx-label-all-loops]
+            for(int w=0; w<IN_DIM; w++)
+            ^~~
+            VITIS_LOOP_33_3: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8097:13: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8100:5: warning: Added loop label VITIS_LOOP_36_4:   [xilinx-label-all-loops]
+    for (int r = 0; r < IN_DIM; r++) {
+    ^~~
+    VITIS_LOOP_36_4: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8100:5: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8101:9: warning: Added loop label VITIS_LOOP_37_5:   [xilinx-label-all-loops]
+        for (int c = 0; c < IN_DIM; c++) {
+        ^~~
+        VITIS_LOOP_37_5: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8101:9: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8104:13: warning: Added loop label VITIS_LOOP_40_6:   [xilinx-label-all-loops]
+            for (int ch = 0; ch < IN_CH; ch++) {
+            ^~~
+            VITIS_LOOP_40_6: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8104:13: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8128:17: warning: Added loop label VITIS_LOOP_64_7:   [xilinx-label-all-loops]
+                for (int f = 0; f < OUT_CH; f++) {
+                ^~~
+                VITIS_LOOP_64_7: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8128:17: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8135:21: warning: Added loop label VITIS_LOOP_71_8:   [xilinx-label-all-loops]
+                    for (int ch = 0; ch < IN_CH; ch++) {
+                    ^~~
+                    VITIS_LOOP_71_8: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8135:21: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8138:2: warning: Added loop label VITIS_LOOP_74_9:   [xilinx-label-all-loops]
+ for (int wr = 0; wr < 3; wr++) {
+ ^~~
+ VITIS_LOOP_74_9: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8138:2: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8139:29: warning: Added loop label VITIS_LOOP_75_10:   [xilinx-label-all-loops]
+                            for (int wc = 0; wc < 3; wc++) {
+                            ^~~
+                            VITIS_LOOP_75_10: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8139:29: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8165:2: warning: Added loop label VITIS_LOOP_101_1:   [xilinx-label-all-loops]
+ for (int r = 0; r < DIM; r++) {
+ ^~~
+ VITIS_LOOP_101_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8165:2: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8166:9: warning: Added loop label VITIS_LOOP_102_2:   [xilinx-label-all-loops]
+        for (int c = 0; c < DIM; c++) {
+        ^~~
+        VITIS_LOOP_102_2: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8166:9: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8171:2: warning: Added loop label VITIS_LOOP_107_3:   [xilinx-label-all-loops]
+ for (int ch = 0; ch < CH; ch++) {
+ ^~~
+ VITIS_LOOP_107_3: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8171:2: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8199:5: warning: Added loop label VITIS_LOOP_135_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 1024; i++) {
+    ^~~
+    VITIS_LOOP_135_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8199:5: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8204:5: warning: Added loop label VITIS_LOOP_140_2:   [xilinx-label-all-loops]
+    for (int c = 0; c < 2; c++) {
+    ^~~
+    VITIS_LOOP_140_2: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8204:5: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8210:9: warning: Added loop label VITIS_LOOP_146_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < 1024; i++) {
+        ^~~
+        VITIS_LOOP_146_3: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8210:9: note: FIX-IT applied suggested code changes
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8231:5: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 32 * 32; i++) {
+    ^~~
+    VITIS_LOOP_167_1: 
+D:\University\Junior\HLS\VGG_Accelerator\hls\vgg_accelerator\solution1\.autopilot\db\vgg_accelerator.pp.0.cpp:8231:5: note: FIX-IT applied suggested code changes

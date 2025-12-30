@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1765454874243">
+  <ports id="1" name="OUTPUT_STREAM_V_data_V" type="PortType" coreId="1701734249" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="2" name="OUTPUT_STREAM_V_keep_V" type="PortType" coreId="1702129263" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="OUTPUT_STREAM_V_strb_V" type="PortType" coreId="2976130032" bitwidth="4" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="4" name="OUTPUT_STREAM_V_last_V" type="PortType" coreId="1701734249" bitwidth="1" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="5" name="s_pool3" type="PortType" coreId="1701734249" bitwidth="8" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <edges id="51" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="56" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="57" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="58" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="61" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="64" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="65" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="66" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="67" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="68" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="71" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="72" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="75" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="78" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="81" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="84" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="89" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="90" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="91" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="92" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="93" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@ports.0"/>
+  <edges id="94" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@ports.1"/>
+  <edges id="95" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@ports.2"/>
+  <edges id="96" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@ports.3"/>
+  <edges id="97" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="98" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="100" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="101" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="229" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="230" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="231" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="232" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="233" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="234" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="235" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="236" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="237" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="238" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="239" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="240" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="241" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.8"/>
+  <blocks id="21" name="entry" type="BlockType">
+    <controlOutputObjs>for.body6.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="c" originalName="c" coreId="1013212536" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="flat_img_V" lineNumber="134" originalName="flat_img.V" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="flat_img_V_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" contextFuncName="dense_layer" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="134" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="empty" coreId="1013212536" bitwidth="32" opcode="wait" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="_ln0" rtlName="grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89" coreId="741487420" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>s_pool3</dataInputObjs>
+      <constName>dense_layer_Pipeline_VITIS_LOOP_135_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="empty_53" coreId="943481957" bitwidth="32" opcode="wait" nodeLabel="2.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="c_write_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="741875756" contextFuncName="dense_layer" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="br_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="943481957" contextFuncName="dense_layer" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <controlInputObjs>for.body6.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vgg_accelerator.cpp">
+      <validLinenumbers>134</validLinenumbers>
+      <validLinenumbers>140</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="27" name="for.body6.i" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.body6.split.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>dense_layer.exit</controlOutputObjs>
+    <controlOutputObjs>for.body6.split.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="c_1" lineNumber="152" originalName="c" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="943481957" contextFuncName="dense_layer" bitwidth="2" opcode="load" nodeLabel="3.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="152" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="icmp_ln140_fu_123_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense_layer" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.51" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="add_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="add_ln140_fu_129_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="dense_layer" bitwidth="2" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.62" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="br_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="741487420" contextFuncName="dense_layer" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.body6.split.i</controlInputObjs>
+      <controlInputObjs>dense_layer.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="vgg_accelerator.cpp">
+      <validLinenumbers>152</validLinenumbers>
+      <validLinenumbers>140</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="40" name="for.body6.split.i" type="BlockType">
+    <controlInputObjs>for.body6.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.body6.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="zext_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="zext_ln140_fu_135_p1" coreId="943481957" contextFuncName="dense_layer" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="dense_bias_addr" lineNumber="141" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="741875756" contextFuncName="dense_layer" bitwidth="1" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="141" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="acc_V" lineNumber="141" originalName="acc.V" fileName="vgg_accelerator.cpp" fileDirectory=".." coreName="ROM" implIndex="auto" control="no" opType="rom" coreId="101" contextFuncName="dense_layer" bitwidth="2" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="0.79" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="141" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="acc_V_41" lineNumber="838" originalName="acc.V" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="acc_V_41_fu_145_p3" coreId="0" contextFuncName="operator_assign_8_4_true_AP_RND_AP_SAT_0" bitwidth="14" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="838" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="operator=&amp;lt;8, 4, true, AP_RND, AP_SAT, 0&amp;gt;"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="trunc_ln152" lineNumber="152" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="trunc_ln152_fu_154_p1" coreId="0" contextFuncName="dense_layer" bitwidth="1" opcode="trunc" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="152" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitconcatenate</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="shl_ln" lineNumber="152" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="shl_ln_fu_157_p3" coreId="0" contextFuncName="dense_layer" bitwidth="11" opcode="bitconcatenate" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="152" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="icmp_ln161" lineNumber="161" fileName="vgg_accelerator.cpp" fileDirectory=".." rtlName="icmp_ln161_fu_166_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="dense_layer" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="0.51" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="161" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="empty_55" coreId="0" bitwidth="32" opcode="wait" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln838" lineNumber="838" fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" fileDirectory=".." rtlName="grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97" coreId="0" contextFuncName="operator_assign_8_4_true_AP_RND_AP_SAT_0" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="2.29" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h" linenumber="838" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="operator=&amp;lt;8, 4, true, AP_RND, AP_SAT, 0&amp;gt;"/>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>bitconcatenate</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>OUTPUT_STREAM_V_data_V</dataOutputObjs>
+      <dataOutputObjs>OUTPUT_STREAM_V_keep_V</dataOutputObjs>
+      <dataOutputObjs>OUTPUT_STREAM_V_strb_V</dataOutputObjs>
+      <dataOutputObjs>OUTPUT_STREAM_V_last_V</dataOutputObjs>
+      <constName>dense_layer_Pipeline_VITIS_LOOP_146_3</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="c_write_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="0" contextFuncName="dense_layer" opcode="store" nodeLabel="3.0" m_display="0" m_delay="0.48" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="br_ln140" lineNumber="140" fileName="vgg_accelerator.cpp" fileDirectory=".." coreId="3014018792" contextFuncName="dense_layer" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="vgg_accelerator.cpp" linenumber="140" fileDirectory="D:\University\Junior\HLS\VGG_Accelerator\hls" functionName="dense_layer"/>
+      <controlInputObjs>for.body6.i</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2022.2/common/technology/autopilot\ap_fixed_base.h">
+      <validLinenumbers>838</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="vgg_accelerator.cpp">
+      <validLinenumbers>140</validLinenumbers>
+      <validLinenumbers>141</validLinenumbers>
+      <validLinenumbers>152</validLinenumbers>
+      <validLinenumbers>161</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="42" name="dense_layer.exit" type="BlockType">
+    <controlInputObjs>for.body6.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln0" coreId="3014019072" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="dense_bias_addr_reg_188">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="shl_ln_reg_198">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="c_reg_172">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="c_1_reg_179">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln161_reg_203">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="acc_V_41_reg_193">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln140_fu_129">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_157">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln140_fu_135">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dense_bias_addr_gep_fu_76">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln161_fu_166">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="acc_V_41_fu_145">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln152_fu_154">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="flat_img_V_alloca_fu_72">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_fu_68">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln140_fu_123">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dense_layer_Pipeline_VITIS_LOOP_135_1_fu_89">
+    <nodeIds>17</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_dense_layer_Pipeline_VITIS_LOOP_146_3_fu_97">
+    <nodeIds>37</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln140_store_fu_115">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="c_1_load_fu_120">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln140_store_fu_140">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="dense_bias">
+    <nodeIds>31</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dense_weights" portID="100">
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <ioPorts name="OUTPUT_STREAM_V_data_V">
+    <contents name="call">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_keep_V">
+    <contents name="call">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_last_V">
+    <contents name="call">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="OUTPUT_STREAM_V_strb_V">
+    <contents name="call">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="s_pool3">
+    <contents name="call">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="2" latency="2"/>
+      <operations id="19" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="17" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="2" latency="2"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="31" stage="1" latency="2"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="39" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dense_layer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="5136" mMaxLatency="5136">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1028" mMaxLatency="1028">
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_140_2" mII="-1" mDepth="-1" mMinTripCount="2" mMaxTripCount="2" mMinLatency="4106" mMaxLatency="4106" mType="1">
+      <basicBlocks>27</basicBlocks>
+      <basicBlocks>40</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>42</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

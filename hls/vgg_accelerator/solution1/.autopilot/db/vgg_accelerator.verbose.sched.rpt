@@ -1,0 +1,269 @@
+
+
+================================================================
+== Vitis HLS Report for 'vgg_accelerator'
+================================================================
+* Date:           Thu Dec 11 20:07:20 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        vgg_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  8.115 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+--------+--------+----------+
+    |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline |
+    |   min   |   max   |    min   |    max   |   min  |   max  |   Type   |
+    +---------+---------+----------+----------+--------+--------+----------+
+    |   329008|   329008|  3.290 ms|  3.290 ms|  325637|  325637|  dataflow|
+    +---------+---------+----------+----------+--------+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 18, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (0.00ns)   --->   "%call_ln203 = call void @input_adapter, i32 %INPUT_STREAM_V_data_V, i4 %INPUT_STREAM_V_keep_V, i4 %INPUT_STREAM_V_strb_V, i1 %INPUT_STREAM_V_last_V, i8 %s_input" [vgg_accelerator.cpp:203]   --->   Operation 19 'call' 'call_ln203' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 20 [1/2] (0.00ns)   --->   "%call_ln203 = call void @input_adapter, i32 %INPUT_STREAM_V_data_V, i4 %INPUT_STREAM_V_keep_V, i4 %INPUT_STREAM_V_strb_V, i1 %INPUT_STREAM_V_last_V, i8 %s_input" [vgg_accelerator.cpp:203]   --->   Operation 20 'call' 'call_ln203' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [2/2] (0.00ns)   --->   "%call_ln205 = call void @layer_block<1, 16, 32>, i8 %void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_1, i8 %void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons, i8 %s_input, i8 %s_conv1" [vgg_accelerator.cpp:205]   --->   Operation 21 'call' 'call_ln205' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 22 [1/2] (0.00ns)   --->   "%call_ln205 = call void @layer_block<1, 16, 32>, i8 %void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_1, i8 %void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons, i8 %s_input, i8 %s_conv1" [vgg_accelerator.cpp:205]   --->   Operation 22 'call' 'call_ln205' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 23 [2/2] (0.00ns)   --->   "%call_ln206 = call void @max_pool<16, 32>, i8 %s_conv1, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_28, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_27, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_26, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_25, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_24, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_23, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_22, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_21, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_20, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_29, i8 %s_pool1" [vgg_accelerator.cpp:206]   --->   Operation 23 'call' 'call_ln206' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 24 [1/2] (0.00ns)   --->   "%call_ln206 = call void @max_pool<16, 32>, i8 %s_conv1, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_28, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_27, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_26, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_25, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_24, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_23, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_22, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_21, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_20, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1, i8 %p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_29, i8 %s_pool1" [vgg_accelerator.cpp:206]   --->   Operation 24 'call' 'call_ln206' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 25 [2/2] (0.00ns)   --->   "%call_ln208 = call void @layer_block<16, 32, 16>, i8 %void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_1, i8 %void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con, i4 %conv2_bias, i5 %conv2_weights, i8 %s_conv2, i8 %s_pool1" [vgg_accelerator.cpp:208]   --->   Operation 25 'call' 'call_ln208' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln208 = call void @layer_block<16, 32, 16>, i8 %void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_1, i8 %void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con, i4 %conv2_bias, i5 %conv2_weights, i8 %s_conv2, i8 %s_pool1" [vgg_accelerator.cpp:208]   --->   Operation 26 'call' 'call_ln208' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 27 [2/2] (0.00ns)   --->   "%call_ln209 = call void @max_pool<32, 16>, i8 %s_conv2, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_18, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_17, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_16, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_15, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_14, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_13, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_12, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_11, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_10, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_21, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_20, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_19, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_18, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_17, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_16, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_15, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_14, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_13, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_12, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_11, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_10, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_9, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_8, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_7, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_6, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_19, i8 %s_pool2" [vgg_accelerator.cpp:209]   --->   Operation 27 'call' 'call_ln209' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln209 = call void @max_pool<32, 16>, i8 %s_conv2, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_18, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_17, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_16, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_15, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_14, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_13, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_12, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_11, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_10, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_21, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_20, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_19, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_18, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_17, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_16, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_15, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_14, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_13, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_12, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_11, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_10, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_9, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_8, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_7, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_6, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1, i8 %p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_19, i8 %s_pool2" [vgg_accelerator.cpp:209]   --->   Operation 28 'call' 'call_ln209' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln211 = call void @layer_block<32, 64, 8>, i8 %void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_1, i8 %void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con, i3 %conv3_bias, i5 %conv3_weights, i8 %s_conv3, i8 %s_pool2" [vgg_accelerator.cpp:211]   --->   Operation 29 'call' 'call_ln211' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln211 = call void @layer_block<32, 64, 8>, i8 %void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_1, i8 %void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con, i3 %conv3_bias, i5 %conv3_weights, i8 %s_conv3, i8 %s_pool2" [vgg_accelerator.cpp:211]   --->   Operation 30 'call' 'call_ln211' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln212 = call void @max_pool<64, 8>, i8 %s_conv3, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_7, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_6, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_5, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_4, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_3, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_53, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_52, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_51, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_50, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_49, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_48, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_47, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_46, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_45, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_44, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_43, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_42, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_41, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_40, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_39, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_38, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_37, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_36, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_35, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_34, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_33, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_32, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_31, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_30, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_29, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_28, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_27, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_26, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_25, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_24, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_23, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_22, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_21, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_20, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_19, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_18, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_17, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_16, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_15, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_14, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_13, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_12, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_11, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_10, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_9, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_8, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_7, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_6, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_5, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_4, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_3, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_2, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_1, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_9, i8 %s_pool3" [vgg_accelerator.cpp:212]   --->   Operation 31 'call' 'call_ln212' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln212 = call void @max_pool<64, 8>, i8 %s_conv3, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_7, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_6, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_5, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_4, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_3, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_53, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_52, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_51, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_50, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_49, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_48, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_47, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_46, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_45, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_44, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_43, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_42, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_41, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_40, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_39, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_38, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_37, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_36, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_35, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_34, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_33, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_32, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_31, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_30, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_29, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_28, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_27, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_26, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_25, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_24, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_23, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_22, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_21, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_20, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_19, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_18, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_17, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_16, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_15, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_14, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_13, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_12, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_11, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_10, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_9, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_8, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_7, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_6, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_5, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_4, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_3, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_2, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_1, i8 %p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode, i8 %void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_9, i8 %s_pool3" [vgg_accelerator.cpp:212]   --->   Operation 32 'call' 'call_ln212' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln214 = call void @dense_layer, i32 %OUTPUT_STREAM_V_data_V, i4 %OUTPUT_STREAM_V_keep_V, i4 %OUTPUT_STREAM_V_strb_V, i1 %OUTPUT_STREAM_V_last_V, i8 %s_pool3, i2 %dense_bias, i5 %dense_weights" [vgg_accelerator.cpp:214]   --->   Operation 33 'call' 'call_ln214' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln214 = call void @dense_layer, i32 %OUTPUT_STREAM_V_data_V, i4 %OUTPUT_STREAM_V_keep_V, i4 %OUTPUT_STREAM_V_strb_V, i1 %OUTPUT_STREAM_V_last_V, i8 %s_pool3, i2 %dense_bias, i5 %dense_weights" [vgg_accelerator.cpp:214]   --->   Operation 34 'call' 'call_ln214' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 35 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln201 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_4" [vgg_accelerator.cpp:201]   --->   Operation 35 'specdataflowpipeline' 'specdataflowpipeline_ln201' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 36 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @s_conv1_str, i32 1, void @p_str, void @p_str, i32 128, i32 128, i8 %s_conv1, i8 %s_conv1"   --->   Operation 36 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 37 [1/1] (0.00ns)   --->   "%empty_30 = specchannel i32 @_ssdm_op_SpecChannel, void @s_conv2_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i8 %s_conv2, i8 %s_conv2"   --->   Operation 37 'specchannel' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 38 [1/1] (0.00ns)   --->   "%empty_31 = specchannel i32 @_ssdm_op_SpecChannel, void @s_conv3_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i8 %s_conv3, i8 %s_conv3"   --->   Operation 38 'specchannel' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 39 [1/1] (0.00ns)   --->   "%empty_32 = specchannel i32 @_ssdm_op_SpecChannel, void @s_input_str, i32 1, void @p_str, void @p_str, i32 128, i32 128, i8 %s_input, i8 %s_input"   --->   Operation 39 'specchannel' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 40 [1/1] (0.00ns)   --->   "%empty_33 = specchannel i32 @_ssdm_op_SpecChannel, void @s_pool1_str, i32 1, void @p_str, void @p_str, i32 128, i32 128, i8 %s_pool1, i8 %s_pool1"   --->   Operation 40 'specchannel' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 41 [1/1] (0.00ns)   --->   "%empty_34 = specchannel i32 @_ssdm_op_SpecChannel, void @s_pool2_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i8 %s_pool2, i8 %s_pool2"   --->   Operation 41 'specchannel' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 42 [1/1] (0.00ns)   --->   "%empty_35 = specchannel i32 @_ssdm_op_SpecChannel, void @s_pool3_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i8 %s_pool3, i8 %s_pool3"   --->   Operation 42 'specchannel' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 43 [1/1] (0.00ns)   --->   "%spectopmodule_ln178 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_3" [vgg_accelerator.cpp:178]   --->   Operation 43 'spectopmodule' 'spectopmodule_ln178' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %INPUT_STREAM_V_data_V, i4 %INPUT_STREAM_V_keep_V, i4 %INPUT_STREAM_V_strb_V, i1 %INPUT_STREAM_V_last_V, void @empty_7, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %INPUT_STREAM_V_data_V"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %INPUT_STREAM_V_keep_V"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 47 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %INPUT_STREAM_V_strb_V"   --->   Operation 47 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %INPUT_STREAM_V_last_V"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %OUTPUT_STREAM_V_data_V, i4 %OUTPUT_STREAM_V_keep_V, i4 %OUTPUT_STREAM_V_strb_V, i1 %OUTPUT_STREAM_V_last_V, void @empty_7, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %OUTPUT_STREAM_V_data_V"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %OUTPUT_STREAM_V_keep_V"   --->   Operation 51 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %OUTPUT_STREAM_V_strb_V"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %OUTPUT_STREAM_V_last_V"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_16, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_14, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_input, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_conv1, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_pool1, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_conv2, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_pool2, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_conv3, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %s_pool3, void @empty_11, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 62 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln215 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %OUTPUT_STREAM_V_data_V, i4 %OUTPUT_STREAM_V_keep_V, i4 %OUTPUT_STREAM_V_strb_V, i1 0, i1 %OUTPUT_STREAM_V_last_V, i1 0, i1 0, void @empty" [vgg_accelerator.cpp:215]   --->   Operation 62 'specaxissidechannel' 'specaxissidechannel_ln215' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 63 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln215 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %INPUT_STREAM_V_data_V, i4 %INPUT_STREAM_V_keep_V, i4 %INPUT_STREAM_V_strb_V, i1 0, i1 %INPUT_STREAM_V_last_V, i1 0, i1 0, void @empty_8" [vgg_accelerator.cpp:215]   --->   Operation 63 'specaxissidechannel' 'specaxissidechannel_ln215' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 64 [1/1] (0.00ns)   --->   "%ret_ln215 = ret" [vgg_accelerator.cpp:215]   --->   Operation 64 'ret' 'ret_ln215' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+ <State 18>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

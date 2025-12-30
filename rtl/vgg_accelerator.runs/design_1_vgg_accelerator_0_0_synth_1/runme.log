@@ -1,0 +1,1075 @@
+
+*** Running vivado
+    with args -log design_1_vgg_accelerator_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_vgg_accelerator_0_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_vgg_accelerator_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 410.363 ; gain = 66.152
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/University/Junior/HLS/VGG_Accelerator/hls/vgg_accelerator/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_vgg_accelerator_0_0
+Command: synth_design -top design_1_vgg_accelerator_0_0 -part xczu5eg-sfvc784-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4264
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1796.391 ; gain = 336.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_vgg_accelerator_0_0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ip/design_1_vgg_accelerator_0_0/synth/design_1_vgg_accelerator_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_CTRL_BUS_s_axi' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_CTRL_BUS_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_CTRL_BUS_s_axi.v:193]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_CTRL_BUS_s_axi' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_CTRL_BUS_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_input_adapter' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_input_adapter.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_flow_control_loop_pipe' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_flow_control_loop_pipe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_flow_control_loop_pipe' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_flow_control_loop_pipe.v:9]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_regslice_both' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_regslice_both' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_regslice_both__parameterized0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_regslice_both__parameterized0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_regslice_both__parameterized1' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_regslice_both__parameterized1' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_input_adapter' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_input_adapter.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_1_16_32_s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_flow_control_loop_pipe_sequential_init' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_flow_control_loop_pipe_sequential_init' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_32_2_VITIS_LOOP_33_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_Pipeline_VITIS_LOOP_36_4_VITIS_LOOP_37_5.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_1_16_32_s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_1_16_32_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_16_32_s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_16_32_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_16_32_s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_16_32_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_mux_164_8_1_1' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_mux_164_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_mux_164_8_1_1' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_mux_164_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_40_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.v:52]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.v:53]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8_conv2_weights_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_mul_8s_5s_12_1_1' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_mul_8s_5s_12_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_mul_8s_5s_12_1_1' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_mul_8s_5s_12_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_16_32_16_s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_16_32_16_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_32_16_s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_val' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_val.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_val' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_val.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_32_16_s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_32_16_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_31_1_VITIS_LOOP_32_2_VITIS_LOOP_33_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_mux_325_8_1_1' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_mux_325_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_mux_325_8_1_1' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_mux_325_8_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.v:52]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.v:53]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_layer_block_32_64_8_s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_layer_block_32_64_8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_64_8_s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_max_pool_64_8_s' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_max_pool_64_8_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_dense_layer' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_dense_layer_flat_img_V_RAM_AUTO_1R1W' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_flat_img_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_dense_layer_flat_img_V_RAM_AUTO_1R1W' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_flat_img_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R.dat' is read successfully [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_dense_layer' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_fifo_w8_d128_S' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d128_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_fifo_w8_d128_S_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d128_S.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_fifo_w8_d128_S_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d128_S.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_fifo_w8_d128_S' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d128_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_fifo_w8_d64_S' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d64_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_fifo_w8_d64_S_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d64_S.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_fifo_w8_d64_S_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d64_S.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_fifo_w8_d64_S' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_fifo_w8_d64_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_layer_block_1_16_32_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_1_16_32_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_layer_block_1_16_32_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_1_16_32_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_layer_block_1_16_32_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_1_16_32_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_layer_block_1_16_32_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_1_16_32_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_max_pool_16_32_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_16_32_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_max_pool_16_32_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_16_32_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_max_pool_16_32_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_16_32_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_max_pool_16_32_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_16_32_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_layer_block_16_32_16_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_16_32_16_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_layer_block_16_32_16_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_16_32_16_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_layer_block_16_32_16_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_16_32_16_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_layer_block_16_32_16_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_16_32_16_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_max_pool_32_16_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_32_16_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_max_pool_32_16_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_32_16_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_max_pool_32_16_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_32_16_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_max_pool_32_16_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_32_16_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_layer_block_32_64_8_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_32_64_8_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_layer_block_32_64_8_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_32_64_8_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_layer_block_32_64_8_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_32_64_8_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_layer_block_32_64_8_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_layer_block_32_64_8_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_max_pool_64_8_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_64_8_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_max_pool_64_8_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_64_8_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_max_pool_64_8_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_64_8_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_max_pool_64_8_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_max_pool_64_8_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_dense_layer_U0' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_dense_layer_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'vgg_accelerator_start_for_dense_layer_U0_ShiftReg' [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_dense_layer_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_dense_layer_U0_ShiftReg' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_dense_layer_U0.v:107]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator_start_for_dense_layer_U0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_start_for_dense_layer_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'vgg_accelerator' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vgg_accelerator_0_0' (0#1) [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ip/design_1_vgg_accelerator_0_0/synth/design_1_vgg_accelerator_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_CTRL_BUS_s_axi.v:250]
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_146_3_dense_weights_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[6] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[5] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[4] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[3] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[2] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[1] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[0] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[6] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[5] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[4] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[3] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[2] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[1] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[0] in module vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_dense_layer_flat_img_V_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_dense_layer_dense_bias_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[6] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[5] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[4] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[3] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[2] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[1] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[0] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[6] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[5] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[4] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[3] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[2] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[1] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[0] in module vgg_accelerator_dense_layer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_done_int in module vgg_accelerator_flow_control_loop_pipe is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[6] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[5] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[4] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[3] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[2] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[1] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[0] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[6] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[5] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[4] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[3] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[2] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[1] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[0] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[6] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[5] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[4] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[3] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[2] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[1] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_num_data_valid[0] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[6] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[5] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[4] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[3] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[2] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[1] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool3_fifo_cap[0] in module vgg_accelerator_max_pool_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8_conv3_weights_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[6] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[5] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[4] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[3] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[2] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[1] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[0] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[6] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[5] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[4] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[3] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[2] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[1] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_fifo_cap[0] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[6] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[5] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[4] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[3] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[2] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[1] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_num_data_valid[0] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[6] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[5] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[4] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[3] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[2] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[1] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_pool2_fifo_cap[0] in module vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_40_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[6] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[5] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[4] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[3] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[2] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[1] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_conv3_num_data_valid[0] in module vgg_accelerator_layer_block_32_64_8_s is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 2193.590 ; gain = 733.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2211.496 ; gain = 751.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 2211.496 ; gain = 751.109
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.725 . Memory (MB): peak = 2211.496 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ip/design_1_vgg_accelerator_0_0/constraints/vgg_accelerator_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2335.875 ; gain = 0.004
+Finished Parsing XDC File [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ip/design_1_vgg_accelerator_0_0/constraints/vgg_accelerator_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.runs/design_1_vgg_accelerator_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.runs/design_1_vgg_accelerator_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2335.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.690 . Memory (MB): peak = 2335.875 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 2335.875 ; gain = 875.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 2335.875 ; gain = 875.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.runs/design_1_vgg_accelerator_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 2335.875 ; gain = 875.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'vgg_accelerator_CTRL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'vgg_accelerator_CTRL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_3_reg_96_reg' and it is trimmed from '11' to '10' bits. [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_dense_layer_Pipeline_VITIS_LOOP_135_1.v:146]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'vgg_accelerator_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'vgg_accelerator_CTRL_BUS_s_axi'
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_layer_block_1_16_32_s_void_layer_block_stream_stream_signed_char_const_1_3_3_bkb:/ram_reg" of size (depth=32 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_max_pool_16_32_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2dEe:/ram_reg" of size (depth=32 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_layer_block_16_32_16_s_void_layer_block_stream_stream_signed_char_const_16_3_tde:/ram_reg" of size (depth=256 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_max_pool_32_16_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1vdy:/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_max_pool_32_16_s_p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9Zio:/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_layer_block_32_64_8_s_void_layer_block_stream_stream_signed_char_const_32_3_31iI:/ram_reg" of size (depth=256 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_max_pool_64_8_s_void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_3i2:/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "vgg_accelerator_max_pool_64_8_s_p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9apb3s:/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "vgg_accelerator_dense_layer_flat_img_V_RAM_AUTO_1R1W:/ram_reg"
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:21 . Memory (MB): peak = 2335.875 ; gain = 875.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 92    
+	   2 Input   32 Bit       Adders := 92    
+	   2 Input   23 Bit       Adders := 2     
+	   2 Input   22 Bit       Adders := 13    
+	   2 Input   21 Bit       Adders := 11    
+	   3 Input   21 Bit       Adders := 4     
+	   2 Input   20 Bit       Adders := 10    
+	   3 Input   20 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 11    
+	   3 Input   19 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 3     
+	   4 Input   15 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 8     
+	   4 Input   13 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 8     
+	   3 Input   12 Bit       Adders := 19    
+	   3 Input   11 Bit       Adders := 14    
+	   2 Input   11 Bit       Adders := 14    
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 30    
+	   2 Input    7 Bit       Adders := 31    
+	   2 Input    6 Bit       Adders := 9     
+	   2 Input    5 Bit       Adders := 7     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 11    
++---XORs : 
+	   2 Input      1 Bit         XORs := 230   
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 29    
+	               16 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               13 Bit    Registers := 3     
+	               12 Bit    Registers := 24    
+	               11 Bit    Registers := 13    
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 12    
+	                8 Bit    Registers := 1466  
+	                7 Bit    Registers := 28    
+	                6 Bit    Registers := 12    
+	                5 Bit    Registers := 27    
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 27    
+	                1 Bit    Registers := 186   
++---RAMs : 
+	               8K Bit	(1024 X 8 bit)          RAMs := 1     
+	               2K Bit	(256 X 8 bit)          RAMs := 4     
+	              256 Bit	(32 X 8 bit)          RAMs := 18    
+	              128 Bit	(16 X 8 bit)          RAMs := 32    
+	               64 Bit	(8 X 8 bit)          RAMs := 64    
++---ROMs : 
+	                    ROMs := 11    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   2 Input   63 Bit        Muxes := 1     
+	   2 Input   62 Bit        Muxes := 1     
+	   2 Input   61 Bit        Muxes := 1     
+	   2 Input   60 Bit        Muxes := 1     
+	   2 Input   59 Bit        Muxes := 1     
+	   2 Input   58 Bit        Muxes := 1     
+	   2 Input   57 Bit        Muxes := 1     
+	   2 Input   56 Bit        Muxes := 1     
+	   2 Input   55 Bit        Muxes := 1     
+	   2 Input   54 Bit        Muxes := 1     
+	   2 Input   53 Bit        Muxes := 1     
+	   2 Input   52 Bit        Muxes := 1     
+	   2 Input   51 Bit        Muxes := 1     
+	   2 Input   50 Bit        Muxes := 1     
+	   2 Input   49 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   46 Bit        Muxes := 1     
+	   2 Input   45 Bit        Muxes := 1     
+	   2 Input   44 Bit        Muxes := 1     
+	   2 Input   43 Bit        Muxes := 1     
+	   2 Input   42 Bit        Muxes := 1     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 1     
+	   2 Input   39 Bit        Muxes := 1     
+	   2 Input   38 Bit        Muxes := 1     
+	   2 Input   37 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 1     
+	   2 Input   35 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 77    
+	   2 Input   32 Bit        Muxes := 8     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   30 Bit        Muxes := 2     
+	   2 Input   29 Bit        Muxes := 2     
+	   2 Input   28 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 2     
+	   2 Input   26 Bit        Muxes := 2     
+	   2 Input   25 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input   23 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 2     
+	   2 Input   21 Bit        Muxes := 2     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   19 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 2     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 6     
+	   2 Input   15 Bit        Muxes := 8     
+	   2 Input   14 Bit        Muxes := 4     
+	   2 Input   13 Bit        Muxes := 8     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 6     
+	   2 Input   10 Bit        Muxes := 7     
+	   2 Input    9 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 966   
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 20    
+	   2 Input    6 Bit        Muxes := 12    
+	   2 Input    5 Bit        Muxes := 41    
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 76    
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 135   
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 26    
+	   3 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 284   
+	   3 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_1_U/ram_reg" of size (depth=32 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_U/ram_reg" of size (depth=32 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_6_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_7_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_8_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_9_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_10_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_11_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_12_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_13_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_14_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_15_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_16_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_17_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_18_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_19_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_20_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_21_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_10_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_11_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_12_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_13_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_14_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_15_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_16_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_17_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_18_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_32_16_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_19_U/ram_reg" of size (depth=16 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_1_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_2_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_3_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_4_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_5_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_6_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_7_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_8_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_9_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_10_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_11_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_12_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_13_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_14_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_15_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_16_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_17_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_18_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_19_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_20_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_21_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_22_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_23_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_24_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_25_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_26_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_27_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_28_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_29_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_30_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_31_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_32_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_33_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_34_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_35_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_36_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_37_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_38_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_39_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_40_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_41_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_42_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_43_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_44_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_45_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_46_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_47_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_48_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_49_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_50_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_51_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_52_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_53_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/i_4_0/max_pool_64_8_U0/void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_3_U/ram_reg" of size (depth=8 x width=8) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Common 17-14] Message 'Synth 8-6904' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_INPUT_STREAM_V_data_V_U/B_V_data_1_payload_A_reg' and it is trimmed from '32' to '8' bits. [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:85]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_INPUT_STREAM_V_data_V_U/B_V_data_1_payload_B_reg' and it is trimmed from '32' to '8' bits. [d:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.gen/sources_1/bd/design_1/ipshared/31b6/hdl/verilog/vgg_accelerator_regslice_both.v:91]
+RAM ("inst/i_4_1/dense_layer_U0/flat_img_V_U/ram_reg") is too shallow (depth = 1024) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 8 for RAM "inst/i_4_1/dense_layer_U0/flat_img_V_U/ram_reg"
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module vgg_accelerator_CTRL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module vgg_accelerator_CTRL_BUS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:13:14 ; elapsed = 00:14:06 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------------------------------------------------------+------------+---------------+----------------+
+|Module Name                                                   | RTL Object | Depth x Width | Implemented As | 
++--------------------------------------------------------------+------------+---------------+----------------+
+|vgg_accelerator_layer_block_16_32_16_s_conv2_bias_ROM_AUTO_1R | rom0       | 32x4          | LUT            | 
+|vgg_accelerator_layer_block_32_64_8_s_conv3_bias_ROM_AUTO_1R  | rom0       | 64x3          | LUT            | 
+|vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8  | p_0_out    | 32768x5       | LUT            | 
+|vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8  | p_0_out    | 32768x5       | LUT            | 
+|vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8  | p_0_out    | 32768x5       | LUT            | 
+|vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8  | p_0_out    | 32768x5       | LUT            | 
+|vgg_accelerator_layer_block_32_64_8_Pipeline_VITIS_LOOP_71_8  | p_0_out    | 32768x5       | LUT            | 
+|vgg_accelerator                                               | p_0_out    | 64x3          | LUT            | 
+|vgg_accelerator_dense_layer                                   | p_0_out    | 2048x5        | LUT            | 
+|vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8 | p_0_out    | 8192x5        | LUT            | 
+|vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8 | p_0_out    | 8192x5        | LUT            | 
+|vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8 | p_0_out    | 8192x5        | LUT            | 
+|vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8 | p_0_out    | 8192x5        | LUT            | 
+|vgg_accelerator_layer_block_16_32_16_Pipeline_VITIS_LOOP_71_8 | p_0_out    | 8192x5        | LUT            | 
+|vgg_accelerator_layer_block_16_32_16_s                        | p_0_out    | 32x4          | LUT            | 
++--------------------------------------------------------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name               | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_4_1/dense_layer_U0 | flat_img_V_U/ram_reg | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
++--------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------+------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name                        | RTL Object                                                                                                 | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------+------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst                               | void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_1_U/ram_reg                        | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst                               | void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_U/ram_reg                          | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_U/ram_reg                | Implied   | 16 x 8               | RAM32M16 x 1  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_6_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_7_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_8_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_9_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_10_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_11_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_12_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_13_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_14_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_15_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_16_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_17_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_18_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_19_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_20_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_21_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_10_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_11_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_12_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_13_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_14_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_15_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_16_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_17_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_18_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_19_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_U/ram_reg                | Implied   | 8 x 8                | RAM32M16 x 1  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_1_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_2_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_3_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_4_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_5_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_6_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_7_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_8_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_9_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_10_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_11_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_12_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_13_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_14_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_15_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_16_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_17_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_18_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_19_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_20_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_21_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_22_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_23_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_24_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_25_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_26_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_27_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_28_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_29_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_30_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_31_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_32_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_33_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_34_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_35_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_36_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_37_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_38_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_39_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_40_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_41_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_42_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_43_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_44_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_45_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_46_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_47_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_48_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_49_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_50_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_51_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_52_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_53_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_U/ram_reg                                       | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_3_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_4_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_5_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_6_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_7_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_9_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst                               | layer_block_32_64_8_U0/void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_1_U/ram_reg | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst                               | layer_block_32_64_8_U0/void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_U/ram_reg   | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst/i_4_1/layer_block_16_32_16_U0 | void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_U/ram_reg                          | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst/i_4_1/layer_block_16_32_16_U0 | void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_1_U/ram_reg                        | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_U/ram_reg                | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_20_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_21_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_22_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_23_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_24_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_25_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_26_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_27_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_28_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_29_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
++-----------------------------------+------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:13:36 ; elapsed = 00:14:31 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:13:46 ; elapsed = 00:14:42 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name               | RTL Object           | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++--------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|inst/i_4_1/dense_layer_U0 | flat_img_V_U/ram_reg | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 1               | 
++--------------------------+----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------+------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name                        | RTL Object                                                                                                 | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------+------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|inst                               | void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_1_U/ram_reg                        | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst                               | void_layer_block_stream_stream_signed_char_const_1_3_3_signed_char_cons_U/ram_reg                          | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_U/ram_reg                | Implied   | 16 x 8               | RAM32M16 x 1  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_6_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_7_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_8_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_9_U/ram_reg              | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_10_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_11_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_12_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_13_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_14_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_15_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_16_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_17_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_18_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_19_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_20_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | p_ZZ8max_poolILi32ELi16EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_21_U/ram_reg             | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_10_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_11_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_12_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_13_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_14_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_15_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_16_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_17_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_18_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_32_16_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_19_U/ram_reg                                    | Implied   | 16 x 8               | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_U/ram_reg                | Implied   | 8 x 8                | RAM32M16 x 1  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_1_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_2_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_3_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_4_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_5_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_6_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_7_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_8_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_9_U/ram_reg              | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_10_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_11_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_12_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_13_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_14_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_15_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_16_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_17_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_18_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_19_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_20_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_21_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_22_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_23_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_24_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_25_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_26_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_27_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_28_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_29_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_30_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_31_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_32_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_33_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_34_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_35_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_36_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_37_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_38_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_39_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_40_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_41_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_42_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_43_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_44_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_45_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_46_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_47_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_48_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_49_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_50_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_51_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_52_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | p_ZZ8max_poolILi64ELi8EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mode_53_U/ram_reg             | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_U/ram_reg                                       | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_1_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_2_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_3_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_4_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_5_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_6_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_7_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_8_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst/i_4_0/max_pool_64_8_U0        | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_9_U/ram_reg                                     | Implied   | 8 x 8                | RAM16X1S x 8  | 
+|inst                               | layer_block_32_64_8_U0/void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_1_U/ram_reg | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst                               | layer_block_32_64_8_U0/void_layer_block_stream_stream_signed_char_const_32_3_3_signed_char_con_U/ram_reg   | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst/i_4_1/layer_block_16_32_16_U0 | void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_U/ram_reg                          | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst/i_4_1/layer_block_16_32_16_U0 | void_layer_block_stream_stream_signed_char_const_16_3_3_signed_char_con_1_U/ram_reg                        | Implied   | 256 x 8              | RAM64M8 x 8   | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_U/ram_reg                | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_1_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_2_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_3_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_4_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | p_ZZ8max_poolILi16ELi32EEvRN3hls6streamI8ap_fixedILi8ELi4EL9ap_q_mode0EL9ap_o_mod_5_U/ram_reg              | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_20_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_21_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_22_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_23_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_24_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_25_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_26_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_27_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_28_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
+|inst/i_4_1/max_pool_16_32_U0       | void_max_pool_stream_stream_ap_fixed_8_4_0_0_0_0_pool_buff_29_U/ram_reg                                    | Implied   | 32 x 8               | RAM32X1S x 8  | 
++-----------------------------------+------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/dense_layer_U0/flat_img_V_U/ram_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:14:12 ; elapsed = 00:15:09 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:14:25 ; elapsed = 00:15:23 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:14:25 ; elapsed = 00:15:23 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:14:30 ; elapsed = 00:15:28 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:14:30 ; elapsed = 00:15:28 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:14:32 ; elapsed = 00:15:30 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:14:32 ; elapsed = 00:15:30 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name         | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[127] | 8      | 8          | 0      | 32      | 16     | 8      | 0      | 
+|dsrl__1     | SRL_SIG_reg[63]  | 8      | 8          | 0      | 16      | 8      | 0      | 0      | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   874|
+|2     |LUT1     |   280|
+|3     |LUT2     |  1755|
+|4     |LUT3     |  5733|
+|5     |LUT4     |  2903|
+|6     |LUT5     |  1190|
+|7     |LUT6     | 18545|
+|8     |MUXF7    |  4713|
+|9     |MUXF8    |  1806|
+|10    |RAM16X1S |   658|
+|11    |RAM32M16 |     2|
+|12    |RAM32X1S |   120|
+|13    |RAM64M8  |    16|
+|14    |RAM64X1D |    16|
+|15    |RAMB18E2 |     1|
+|16    |SRLC32E  |   136|
+|17    |FDRE     | 12280|
+|18    |FDSE     |   554|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:14:32 ; elapsed = 00:15:30 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:13:51 ; elapsed = 00:15:10 . Memory (MB): peak = 3074.055 ; gain = 1489.289
+Synthesis Optimization Complete : Time (s): cpu = 00:14:32 ; elapsed = 00:15:30 . Memory (MB): peak = 3074.055 ; gain = 1613.668
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 3074.055 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8205 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3074.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 812 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 658 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 2 instances
+  RAM32X1S => RAM32X1S (RAMS32): 120 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 16 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 16 instances
+
+Synth Design complete, checksum: 39b5ba29
+INFO: [Common 17-83] Releasing license: Synthesis
+287 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:14:58 ; elapsed = 00:16:01 . Memory (MB): peak = 3074.055 ; gain = 2592.234
+INFO: [Common 17-1381] The checkpoint 'D:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.runs/design_1_vgg_accelerator_0_0_synth_1/design_1_vgg_accelerator_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3074.055 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3074.055 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_vgg_accelerator_0_0, cache-ID = 22bbc445358b728a
+INFO: [Coretcl 2-1174] Renamed 212 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/University/Junior/HLS/VGG_Accelerator/rtl/vgg_accelerator.runs/design_1_vgg_accelerator_0_0_synth_1/design_1_vgg_accelerator_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3074.055 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file design_1_vgg_accelerator_0_0_utilization_synth.rpt -pb design_1_vgg_accelerator_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3074.055 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 11 21:38:40 2025...

@@ -61,7 +61,7 @@ The Accelerator is integrated into the Zynq UltraScale+ MPSoC subsystem using th
 <img width="100%" alt="System Block Design" src="https://github.com/user-attachments/assets/e67d37af-9d36-4acb-bd67-eb38dd986b3a" />
 
 
-### 3. Software Stack (Brief)
+### 3. Software Stack 
 The Processing System (PS) runs a lightweight Python application on PYNQ Linux.
 * **Role:** It acts as the system orchestrator. It captures video, detects the face/eye region using OpenCV, and handles the DMA buffer management to feed the FPGA.
 * **Stabilization:** It applies temporal smoothing algorithms to the FPGA's classification output to prevent noise from triggering false alerts.
@@ -80,7 +80,7 @@ The design was synthesized and implemented on the PYNQ-ZU board, meeting all tim
 <img width="400" height="300" alt="Latency & Timing" src="https://github.com/user-attachments/assets/258ef385-200e-4982-b6ec-9ad5fd7abd97" />
 
 
-### Resource Efficiency (Zero DSP)
+### Resource Efficiency 
 By forcing logic-only arithmetic via quantization, the design achieves extreme efficiency:
 
 | Resource | Used | Total | Utilization |
@@ -96,8 +96,6 @@ By forcing logic-only arithmetic via quantization, the design achieves extreme e
 ---
 
 ## Project Structure
-
-The project is organized into five main directories covering the full development lifecycle from PyTorch training to FPGA deployment.
 
 ```text
 VGG_ACCELERATOR/

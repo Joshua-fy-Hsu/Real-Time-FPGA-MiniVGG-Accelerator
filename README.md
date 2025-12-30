@@ -77,7 +77,7 @@ The design was synthesized and implemented on the PYNQ-ZU board, meeting all tim
 * **Inference Latency:** **3.29 ms** (329,008 cycles)
 * **Slack:** Positive (Estimated 8.115 ns vs Target 10.00 ns)
 
-<img width="100%" alt="Latency & Timing" src="https://github.com/user-attachments/assets/258ef385-200e-4982-b6ec-9ad5fd7abd97" />
+<img width="400" height="300" alt="Latency & Timing" src="https://github.com/user-attachments/assets/258ef385-200e-4982-b6ec-9ad5fd7abd97" />
 
 
 ### Resource Efficiency (Zero DSP)
@@ -90,7 +90,7 @@ By forcing logic-only arithmetic via quantization, the design achieves extreme e
 | **LUT** | 40,994 | 117,120 | 35% |
 | **FF** | 15,135 | 234,240 | 6% |
 
-<img  width="100%" alt="Resource Utilization" src="https://github.com/user-attachments/assets/20cf2911-f800-4ad1-b853-3121ee9b730f" />
+<img  width="400" height="300" alt="Resource Utilization" src="https://github.com/user-attachments/assets/20cf2911-f800-4ad1-b853-3121ee9b730f" />
 
 
 ---
